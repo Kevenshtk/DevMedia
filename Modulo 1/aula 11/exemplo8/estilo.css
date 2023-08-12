@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container{
+    background-image: url(cafeteria.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista{
+    width: 100%;
+    max-width: 768px;
+}
+
+.lista li{
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista li div{
+    height: 1px;
+    background-color: gray;
+    flex: 1 1 auto;
+}
+
+.lista li h3{
+    flex: 0 1 100px;
+}
+
+.lista li span, p{
+    flex: 0 1 100px;
+    text-align: right;
+}
+
+.lista li span{
+    color: #c4a47c;
+}
