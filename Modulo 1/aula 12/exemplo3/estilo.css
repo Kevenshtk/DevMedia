@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header, footer{
+    width: 100%;
+    color: #fff;
+    background-color: #ed5a0e;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-logo{
+    margin: 0 10px;
+}
+
+.destaque{
+    font-weight: bold;
+}
+
+section{
+    margin: 0 auto;
+}
+
+.limita-area{
+    max-width: 1024px;
+}
+
+img:first-child{
+    width: 100%;
+}
+
+img{
+    width: 350px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+
+p{
+    line-height: 32px;
+}
+
+p:last-child{
+    display: inline;
+    background: #f88143;
+    padding: 10px 5px;
+}
+
+.mais-informacoes{
+    display: block;
+    margin: 25px 0;
+    padding-left: 10px;
+    font-weight: bold;
+    border-left: 2px solid #ed5a0e;
+}
+
+.jogos{
+    width: 100%;
+    display: flex;
+    margin: 25px 0;
+    overflow-x: scroll;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+figcaption, figure span {
+    margin: 12px 0;
+    padding: 12px 5px;
+    text-align: center;
+    background: #ed5a0e;
+}
