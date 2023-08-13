@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header, footer{
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0ea6ed;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-logo{
+    font-weight: bold;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+h1{
+    margin: 25px 0;
+}
+
+section{
+    max-width: 950px;
+    text-align: center;
+    line-height: 32px;
+    margin: 30px auto;
+}
+
+p::first-letter{
+    font-size: 25px;
+}
+
+p::first-line{
+    font-style: italic;
+}
