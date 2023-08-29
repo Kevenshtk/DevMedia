@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo{
+    width: 100%;
+    background-color: #00cad1;
+}
+
+.topo .container{
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo-titulo{
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-titulo a{
+    display: flex;
+}
+
+.topo-logo{
+    height: 60px;
+}
+
+.topo-links{
+    display: flex;
+}
+
+.topo-links a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.topo-links a:hover{
+    color: #004b4c;
+}
+
+main{
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+.banner{
+    position: relative;
+    background-image: url(../assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.titulo-banner{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-banner h1{
+    font-size: 38px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+}
+
+.container-conteudo{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sobre h3{
+    font-weight: 500;
+}
+
+.box-sobre img{
+    height: 250px;
+}
+
+.box-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-especialidade{
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgba(0 0 0 / 50%);
+}
+
+.box-especialidade img{
+    width: 100%;
+}
+
+.box-especialidade figcaption{
+    text-align: center;
+    padding: 10px;
+}
+
+.box-link-horarios {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+ .link-horarios {
+    background-color: #00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+} 
+
+#sobre,
+#especialidades,
+#contato{
+    padding: 40px 20px 0;
+}
+
+#contato span{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .container{
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .banner{
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .banner{
+        height: 300px;
+    }
+
+    .box-sobre img{
+        display: none;
+    }
+
+    .box-especialidades{
+        justify-content: center;
+    }
+
+    .box-especialidade{
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+@media (max-width: 425px){
+    .topo .container{
+        flex-direction: column;
+    }
+
+    .topo-titulo{
+        margin: 10px 0;
+    }
+
+    .topo-links{
+        width: 100%;
+        border-top: 1px solid #009fa5;
+        justify-content: space-around;
+    }
+
+    .topo-links a{
+        font-size: 12px;
+    }
+
+    .banner{
+        height: 200px;
+    }
+
+    .titulo-banner h1{
+        font-size: 25px;
+    }
+
+    .box-especialidade{
+        width: 100%;
+    }
+}
