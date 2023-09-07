@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.topo{
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid;
+}
+
+.topo p{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.banner{
+    height: 60vh;
+    background-image: url(img/capa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo h1, h2{
+    width: 430px;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.limitar-secao{
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.secao-sobre p{
+    margin: 15px 0;
+}
+
+.secao-sobre .imagem{
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.secao-sobre span{
+    line-height: 30px;
+    border-left: 2px solid black;
+    padding-left: 5px;
+}
+
+fieldset{
+    margin: 15px 0;
+    padding: 20px;
+}
+.grupo-campo, select{
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-campo input , select{
+    height: 25px;
+    margin: 10px 0;
+}
+
+button{
+    background-color: #d92121;
+    color: white;
+    border:  2px solid #941919;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 52px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #d92121;
+}
+
+@media(max-width: 815px){
+    .secao-sobre  .imagem {
+      width: 100%;
+  }
+}
+
+@media (max-width: 430px){
+    .titulo h1, h2{
+        width: 300px;
+    }
+}
