@@ -1,0 +1,15 @@
+TIPOS DE DADOS
+
+inteiro
+real: usa ponto(.) para separar os números
+caracter: apenas 1 caracter
+cadeia: string
+logico: verdadeiro ou falso sem as ""
+
+CONCATENAÇÃO
+
+escreva(nome-var+nome-var)
+
+escreva(nome-var+" "+nome-var) com um espaço
+
+"\n": adiciona quebra de linha
