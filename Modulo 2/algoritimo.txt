@@ -13,3 +13,11 @@ escreva(nome-var+nome-var)
 escreva(nome-var+" "+nome-var) com um espaço
 
 "\n": adiciona quebra de linha
+
+OPERADORES
+
++
+-
+*
+/: 100 / 3.0 = 33,333... divisão comun, 100 / 3 = 33 divisão inteira
+%: retorna o resto da divisão
