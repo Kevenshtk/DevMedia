@@ -1,0 +1,23 @@
+XAMPP
+PASTA PARA POR OS ARQUIVOS
+xampp/htdocs
+
+URL
+http://localhost/nome da pasta/index.html
+
+NODE.JS
+1
+Executar comando no CMD
+npm install --global http-server
+
+2
+Acessar a pasta do projeto até o arquivo index.html
+
+3
+Executar o servidor
+http-sever -o
+
+Para abrir outro arquivo html
+http-sever -o NomeDoArquivo.html
+
+Para reiniciar o terminal basta Ctrl C
