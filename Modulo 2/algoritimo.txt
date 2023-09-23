@@ -2,7 +2,7 @@ TIPOS DE DADOS
 
 inteiro
 real: usa ponto(.) para separar os números
-caracter: apenas 1 caracter
+caracter: apenas 1 caracter com ''
 cadeia: string
 logico: verdadeiro ou falso sem as ""
 
