@@ -21,3 +21,35 @@ OPERADORES
 *
 /: 100 / 3.0 = 33,333... divisão comun, 100 / 3 = 33 divisão inteira
 %: retorna o resto da divisão
+
+ESTRUTURAS CONDICIONAIS
+
+OPERADORES LÓGICOS
+
+e: se(login != "" e senha == confirma_senha)
+
+ou : se(tem_RG ou tem_CNH)
+
+nao: se(nao tem_CNH)
+{
+  escreva("Você não pode alugar um carro")
+}
+
+
+ESCOLHA
+só pode receber valores  inteiro ou caracter
+
+escolha(opt){
+	caso 1:
+		escreva("")
+		para: usado para impedir o código de prosseguir
+	caso 2:
+		escreva("")
+		para
+	caso 3:
+		escreva("")
+		para
+	caso contrario: é executado caso todas as opições falhem
+		escreva("")
+		pare
+}
