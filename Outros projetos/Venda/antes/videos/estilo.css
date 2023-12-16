@@ -1,0 +1,116 @@
+Body{
+			background-color:black;
+			
+	border-width:10px;
+    border-style:solid;	
+	border-color:orange;
+	border-left:10px solid orange;
+	border-top:10px solid red;
+	
+	margin-left:60px;
+	margin-bottom:60px;
+	margin-top:60px;
+	margin-right:60px;
+	padding:50px;
+			}
+    
+	h1{
+	text-align:align:center;
+	color:white;
+	font-family:"arial black";
+	font-style:italic;
+	Font-size: 60px;
+	font-variant:small-caps;
+	}
+	
+	h6{
+	color:white;
+	font-family:"arial black";
+	font-style:italic;
+	Font-size: 15px;
+	font-variant:small-caps;		
+	}
+	
+	h2{
+	color:white;
+	font-family:"arial black";
+	font-style:italic;
+	Font-size:30px;
+	font-variant:small-caps;
+	}
+	
+	p{
+	color:white;
+	font-family:"arial";
+	font-style:italic;
+	Font-size: 25px;
+	font-variant:small-caps;
+	}
+	
+	
+	
+	#imagem{
+		align:center-left;
+		
+	}
+
+<h3> style="text-align:center;font-family:arial;color:white;"class="blocktext">
+
+
+.menu,
+.sub-menu {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.menu,
+.sub-menu {
+    list-style: none;
+    background: #000;
+}
+.sub-menu {
+    background: #444;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.menu li {
+    position: relative;
+}
+.menu > li {
+    float: left;
+}
+.menu > li:hover {
+    background: orange;
+}
+.menu li:hover > .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.sub-menu li:hover {
+    background: orange;
+}
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+}
