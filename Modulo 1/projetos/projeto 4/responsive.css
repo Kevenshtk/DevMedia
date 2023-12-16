@@ -1,0 +1,18 @@
+@media (max-width: 600px){
+    .topo img{
+        width: 80px;
+    }
+    
+    .img-parallax1 h1{
+        font-size: 55px;
+    }
+
+    .horarios-funcio{
+        text-align: center;
+    }
+
+    .rodape a{
+        bottom: 120px;
+        right: 30px;
+    }
+}

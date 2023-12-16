@@ -9,60 +9,63 @@
 .img-parallax3,
 .img-parallax4,
 .img-parallax5 {
-    position: relative;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* ---------- */
+
 .topo{
     width: 100%;
+    height: 75px;
     position: fixed;
     background-color: #604829;
     z-index: 1;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .topo img{
     width: 100px;
-    position: relative;
-    left: 15%;
 }
 
-.topo div{
-    position: absolute;
-    top: 35%;
-    right: 15%;
-}
 
-.topo div a{
+.menu a{
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     text-decoration: none;
     font-size: 18px;
     color: #c4a47c;
-    margin-right: 20px;
     text-shadow: 3px 5px 2px black;
     letter-spacing: 2px;
+    margin: 0 5px;
 }
+
+/* ---------- */
 
 .img-parallax1{
     background-image: url(img/parallax-imagem1.png);
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-parallax1 h1{
+    max-width: 1024px;
+    width: 100%;
     font-family: "Fraunces", serif;
     text-align: center;
     font-weight: 400;
     font-size: 100px;
     color: #fff;
-
-    position: absolute;
-    top: 45%;
-    left: 0;
-    right: 0;
-
 }
+
+/* ---------- */
 
 .img-parallax2{
     background-image: url(img/parallax-imagem2.jpg);
@@ -70,7 +73,8 @@
 }
 
 .img-parallax2 h3, .img-parallax3 h3{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     font-family: "Fraunces", sans-serif;
     text-align: center;
     font-size: 24px;
@@ -93,46 +97,41 @@
     height: 50vh;
 }
 
+/* ---------- */
+
 .img-parallax4{
     background-image: url(img/parallax-imagem4.png);
     height: 100vh;
+    padding-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-parallax4 h2{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     font-family: "Oswald", serif;
     text-align: center;
     font-size: 24px;
     letter-spacing: 5px;
-    padding: 10px;
-    margin: auto;
     color: #fff;
     background-color: #604829;
-
-    position: relative;
-    top: 10%;
-    right: 0;
-    left: 0;
+    padding: 10px;
 }
 
 .img-parallax4 iframe{
-    position: absolute;
-    top: 23%;
-    left: 0;
-    right: 0;
-    margin: auto;
+    max-width: 1024px;
+    width: 100%;
 }
 
 .container-contatos{
-    width: 500px;
-    padding: 10px;
-    margin: auto;
+    max-width: 500px;
+    width: 100%;
     background-color: #604829;
-
-    position: absolute;
-    bottom: 8%;
-    right: 0;
-    left: 0;
+    padding: 10px;
 }
 
 .container-contatos p{
@@ -171,73 +170,68 @@
     padding: 0 20px;
 }
 
+/* ---------- */
+
 .img-parallax5{
-    height: 85vh;
     background-image: url(img/cafeteria.jpg);
+    padding: 100px 20px;
+    height: 85vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-.img-parallax5 h2{
+.horarios-funcio{
     font-family: "Oswald", sans-serif;
-    text-align: center;
     letter-spacing: 8px;
     color: #fff;
-    margin: 0 auto;
-
-    position: absolute;
-    top: 20%;
-    right: 0;
-    left: 0;
+    margin-bottom: 30px;
 }
 
-.lista{
+.tabela{
     max-width: 768px;
+    width: 100%;
     font-family: "Oswald", sans-serif;
     list-style: none;
-    margin: 0 auto;
-
-    position: absolute;
-    bottom: 20%;
-    right: 0;
-    left: 0;
 }
 
-.lista li{
-    position: relative;
+.tabela .info{
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.lista li h3{
-    margin-bottom: 20px;
+.tabela .info h3{
     color: #fff;
+    flex: 0 1 100px;
 }
 
-.lista li div{
-    width: 70%;
+.tabela .info div{
     height: 1px;
-    margin: 0 auto;
-    background-color: #ACACAC;
-
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
+    background-color: gray;
+    flex: 1 1 auto;
 }
 
-.lista li p, .texto-marrom{
-    font-family: "Oswald", sans-serif;
+.tabela .info p, .destaque{
     font-weight: 700;
-
-    position: absolute;
-    top: 0;
-    right: 0;
+    text-align: right;
+    flex: 0 1 100px;
 }
 
-.texto-marrom{
+.destaque{
     color: #c4a47c;
 }
 
-.lista li p{
+.tabela .info p{
     color: #ACACAC;
 }
+
+/* ---------- */
 
 .rodape{
     font-family: "Lato", sans-serif;
