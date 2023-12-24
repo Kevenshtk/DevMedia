@@ -9,36 +9,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-    <div><!-- Topo da página -->
-        <div class="container-topo limitar-secao">
-            <div class="topo-logo">
-                <img src="img/logo-icone.png">
-                <div>
-                    <h1>AlfaTech</h1>
-                    <p>Soluções em hospedagem</p>
-                </div>
-            </div>
-            <div class="topo-links">
-                <a href="#info">INFORMAÇÕES</a>
-                <a href="#planos">PLANOS</a>
-                <a href="preco.html">PREÇOS</a>
-                <a href="#contato">CONTATO</a>
+<header class="container-topo limitar-secao">
+        <div class="topo-logo">
+            <img src="img/logo-icone.png">
+            <div>
+                <h1>AlfaTech</h1>
+                <p>Soluções em hospedagem</p>
             </div>
         </div>
-    </div>
+        <nav class="topo-links">
+            <a href="#info"><span>INFORMAÇÕES</span></a>
+            <a href="#planos"><span>PLANOS</span></a>
+            <a href="preco.html"><span>PREÇOS</span></a>
+            <a href="#contato"><span>CONTATO</span></a>
+        </nav>
+</header>
 
+<body>
     <div class="secao-banner"> <!-- Conteúdo principal da página -->
         <div class="container-banner limitar-secao">
-            <div>
+            <div class="info">
                 <p>Simples - Fácil de usar - 10x mais rápido</p>
                 <h2>O melhor serviço de hospedagem na web para o seu site.</h2>
                 <p> Obtenha a melhor velocidade para o seu site. Não perca mais
                 clientes por causa de lentidão na sua hospedagem.</p>
             </div>
-            <img src="img/imagem-banner.png">
+            <div class="container-img">
+                <img src="img/imagem-banner.png">
+            </div>
         </div>
     </div>
     
@@ -59,19 +60,19 @@
         <h2>Existem diversos serviços de hospedagem de sites. Porque você deve <span>nos escolher?</span></h2>
 
         <div class="container-info limitar-secao">
-            <div>
+            <div class="card">
                 <img src="img/icone-engrenagens.png">
                 <h3>Fácil de configurar</h3>
                 <p>Facilmente configurável em plataformas CMS populares - Wordpress, Joomia ...</p>
             </div>
 
-            <div class="card2">
+            <div class="card">
                 <img src="img/cloud-icone.png">
                 <h3>Servidores 100% Online</h3>
                 <p>Serviços que operam 100% do tempo para manter o seu site online...</p>
             </div>
 
-            <div class="card3">
+            <div class="card">
                 <img src="img/icone-suporte.png">
                 <h3>Suporte 24/7</h3>
                 <p>Suporte altamente treinado e especializado em soluções de Cloud...</p>
@@ -82,67 +83,66 @@
     <div class="secao-planos" id="planos"><!-- Seção Planos -->
         <h2>Pague <span>somente</span> pelo que for usar. Sem cobranças adicionais!</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <h3>PESSOAL</h3>
-                        <img src="img/pessoal-icone.png">
-                        <p>Indicado para uso pessoal</p>
-                    </th>
-
-                    <th>
-                        <h3>PROFISSIONAL</h3>
-                        <img src="img/equipe-icone.png">
-                        <p>Indicado para profissionais de T.I</p>
-                    </th>
-
-                    <th>
-                        <h3>EMPRESARIAL</h3>
-                        <img src="img/empresa-icone.png">
-                        <p>Indicado para empresas</p>
-                    </th>
-
-                    <th>
-                        <h3>BIG TECHS</h3>
-                        <img src="img/big-tech.png">
-                        <p>Indicado para grandes empresas</p>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="linha-impar">
-                    <td>1 usuário</td>
-                    <td>10 usuários</td>
-                    <td>25 usuários</td>
-                    <td>50 usuários</td>
-                  </tr>
-                  <tr class="linha-par">
-                    <td>1 Domínio Grátis</td>
-                    <td>2 Domínios Grátis</td>
-                    <td>2 Domínios Gratis</td>
-                    <td>3 Domínios Grátis</td>
-                  </tr>
-                  <tr class="linha-impar">
-                    <td>200GB SSD espaço</td>
-                    <td>500GB SSD espaço</td>
-                    <td>1TB SSD espaço</td>
-                    <td>2TB SSD espaço</td>
-                  </tr>
-                  <tr class="linha-par">
-                    <td>Ofertas especiais</td>
-                    <td>Ofertas especiais</td>
-                    <td>Ofertas especiais</td>
-                    <td>Ofertas especiais</td>
-                  </tr>
-                  <tr class="linha-impar">
-                    <td>Suporte Limitado</td>
-                    <td>Suporte Ilimitado</td>
-                    <td>Suporte Ilimitado</td>
-                    <td>Suporte Ilimitado</td>
-                  </tr>
-            </tbody>
-        </table>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h3>PESSOAL</h3>
+                            <img src="img/pessoal-icone.png">
+                            <p>Indicado para uso pessoal</p>
+                        </th>
+                        <th>
+                            <h3>PROFISSIONAL</h3>
+                            <img src="img/equipe-icone.png">
+                            <p>Indicado para profissionais de T.I</p>
+                        </th>
+                        <th>
+                            <h3>EMPRESARIAL</h3>
+                            <img src="img/empresa-icone.png">
+                            <p>Indicado para empresas</p>
+                        </th>
+                        <th>
+                            <h3>BIG TECHS</h3>
+                            <img src="img/big-tech.png">
+                            <p>Indicado para grandes empresas</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="linha-impar">
+                        <td>1 usuário</td>
+                        <td>10 usuários</td>
+                        <td>25 usuários</td>
+                        <td>50 usuários</td>
+                      </tr>
+                      <tr class="linha-par">
+                        <td>1 Domínio Grátis</td>
+                        <td>2 Domínios Grátis</td>
+                        <td>2 Domínios Gratis</td>
+                        <td>3 Domínios Grátis</td>
+                      </tr>
+                      <tr class="linha-impar">
+                        <td>200GB SSD espaço</td>
+                        <td>500GB SSD espaço</td>
+                        <td>1TB SSD espaço</td>
+                        <td>2TB SSD espaço</td>
+                      </tr>
+                      <tr class="linha-par">
+                        <td>Ofertas especiais</td>
+                        <td>Ofertas especiais</td>
+                        <td>Ofertas especiais</td>
+                        <td>Ofertas especiais</td>
+                      </tr>
+                      <tr class="linha-impar">
+                        <td>Suporte Limitado</td>
+                        <td>Suporte Ilimitado</td>
+                        <td>Suporte Ilimitado</td>
+                        <td>Suporte Ilimitado</td>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     
     <div class="secao-segundo-anuncio"><!-- Seção Segundo Anúncio -->
