@@ -6,7 +6,7 @@ body{
 /*  topo */
 
 .topo{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background-color: #afddfb;
     
@@ -42,7 +42,8 @@ body{
 
 .secao{
     width: 100%;
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -130,20 +131,17 @@ iframe{
 }
 
 #contato ul{
-    list-style: none;
-    margin: 40px auto;
     width: 210px;
+    list-style: none;
+    margin: 30px auto;
+    padding: 0;
 }
 
 #contato li{
     text-align: center;
     font-size: 18px;
     margin-top: 15px;
-}
-
-#contato a{
     color: #fff;
-    padding: 2px 5px;
     border-radius: 5px;
     text-decoration: none;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.397);
