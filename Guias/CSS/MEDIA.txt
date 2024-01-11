@@ -1,0 +1,30 @@
+@MEDIA
+
+Media Type
+Braille: Se refere aos dispositivos táteis.
+
+Print: Se refere aos dispositivos de impressão.
+
+Screen: Se refere a monitores ou dispositivos com telas coloridas e resolução adequada.
+
+Speech: Se refere a sintetizadores de voz ou leitores de tela.
+
+TV: Se refere a televisores ou dispositivos com baixa resolução, quantidade de cores e scroll limitado.
+
+Operadores
+
+not: É utilizado quando se deseja que o resultado de uma determinada expressão seja o oposto ao real. 
+
+only: É utilizado quando se deseja prevenir que navegadores antigos que não suportam Media Features tentem processar a expressão.
+
+and: É responsável pelas expressões múltiplas, isto é, quando usamos mais de uma Media Feature para compor a expressão.
+
+Ex.: @media only screen(media type) and (min-width: 320px(media feature)) and (max-width: 480px) {
+  header {
+      width: 100%;
+  }
+}
+
+Orientation
+portrait para vertical / retrato
+landscape para horizontal / paisagem

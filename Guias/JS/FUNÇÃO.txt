@@ -1,0 +1,9 @@
+FUNÇÃO
+
+var texto = "Hello World"; declarar a variavel
+
+function imprimir(nome da função) (texto(parametro)) {
+    console.log(texto)
+}
+
+imprimir(texto) chama a função

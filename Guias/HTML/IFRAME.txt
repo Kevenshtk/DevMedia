@@ -1,0 +1,5 @@
+IFRAME
+<iframe> faz acessa um outro site sem sair do site atual O.B.S.: no meio do iframe pode coloca avisos, 
+com o parâmetro (name) posso fazer o iframe de tela para links colocando no (target)
+scrolling="auto, (no)" esconde a barra de rolagem
+srcdoc permite usar html dentro do iframe

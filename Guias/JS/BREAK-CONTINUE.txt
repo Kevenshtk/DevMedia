@@ -1,0 +1,35 @@
+break; é usado para interromper um loop
+ex.:
+while ( contador < funcionarios.length ) {
+
+    let funcionario = funcionarios[contador];
+
+    if( funcionario.habilitado == true ){
+        console.log("Funcionário habilitado encontrado: " + funcionario.nome);
+        encontrouHabilitado = true;
+        break; encerra o while
+    }
+
+    contador++;
+}
+
+continue; é usado para interromper a iteração atual do loop e passa para a próxima
+
+ex.:
+
+while ( contador < alunos.length ) {
+
+    let aluno = alunos[contador];
+
+    contador++;
+
+    if ( aluno.media < 6 ) {
+        continue; faz com que os valores menores que 6 sejam pulados
+    }
+
+    console.log("Id: " + aluno.id);
+    console.log("Nome: " + aluno.nome);
+    console.log("Média: " + aluno.media);
+    console.log("\n");
+
+}

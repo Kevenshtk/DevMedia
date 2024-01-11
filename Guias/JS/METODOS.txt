@@ -1,0 +1,13 @@
+METODOS
+
+.length: retorna a quantidade seja de letras ou de objetos
+
+Math.random(): redorna um número aleatório entre 0 e < 1(não incluido) | var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
+
+Math.floor(): arredonda um número para o menor número inteiro mais próximo | var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
+
+.getMonth(): retorna o mês atual, que vai de 0 à 11 | let mes_atual = data_atual.getMonth();
+
+.getDate(): retorna o dia do mês atual de 1 à 31 | var numero_escolhido = data_atual.getDate()
+
+new Date(): pega a data atual (ano/mes/dia:horario) | var  data_atual = new Date()

@@ -1,0 +1,10 @@
+SOMBRAS
+box-shadow : 
+1px(delocamento H(valor positivo move para direita)) 
+1px(delocamento V(valor positivo move para baixo)) 
+1px(desfoque) 
+1px(expandir) a sombra aumenta em todas as direções
+black(cor)
+inset cria sombra na frente do elemento
+
+text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26); sombra em textos

@@ -1,0 +1,10 @@
+BACKGROUND
+background-image: linear-gradient(to left(direção), cor, cor); para fazer degrade
+background-image: url(caminho para img); colocar imagem de fundo
+background-size: 1350px, 300px(largura) 150px(altura) (cover(preenche toda a tela), contain(monstra 100% da imagem)); alterar o tamanho
+background-repeat: (no-repeat, repeat-x(horizontal), repeat-y(vertical));
+background-position:(left, right, top, bottom, center);
+background-attachment: fixed; faz o fundo ficar fixo 
+
+Shorthand
+background(color,image, repeat, position, attachment(ordem)) black url(img/wallpaper002.jpg) no-repeat center fixed;

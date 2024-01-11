@@ -1,0 +1,3 @@
+ÍCONES
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> icones do google
+<i class="material-icons">NOME DO ÍCONE</i>

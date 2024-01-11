@@ -1,0 +1,61 @@
+FOR
+Percorrendo uma coleção de dados
+
+let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+for( let contador = 0; contador < meses.length; contador++ ) {
+
+    console.log(meses[contador]);
+
+}
+
+
+
+FOR IN
+
+permite percorrer todas as propriedades de um objeto, seguindo 
+a ordem que elas estão no objeto
+
+let aluno(objeto) = { nome: "Marcos", email: "marcos@email.com", idade: 25 };
+
+for ( let dados(propriedade-obj) in aluno(objeto) ) {
+    console.log(aluno[dados(propriedade-obj)]);
+}
+
+// Marcos
+// marcos@email.com
+// 25
+
+
+FOR OF
+
+permite percorrer os valores de uma coleção de dados
+
+let cursos_idiomas = [
+    { nome: "Inglês", preco: 2500, carga_horaria: 160 },
+    { nome: "Espanhol", preco: 1500, carga_horaria: 110 },
+    { nome: "Francês", preco: 3600, carga_horaria: 200 },
+    { nome: "Chinês", preco: 5500, carga_horaria: 400 },
+    { nome: "Alemão", preco: 3800, carga_horaria: 230 }
+]
+
+for(let curso of cursos_idiomas){
+
+    let nome = curso.nome
+    let preco = curso.preco
+    let carga_horaria = curso.carga_horaria
+
+    let valor_hora = preco / carga_horaria
+
+    console.log("Nome do curso: "+nome)
+    console.log("Carga horário do curso: "+carga_horaria+" horas")
+    console.log("Preço do curso: R$"+preco+",00")
+
+    if(valor_hora >= 15){
+        console.log("Hora/aula superior ou igual a: R$ 15,00")
+    } else {
+        console.log("Hora/aula inferior a: R$ 15,00")
+    }
+    
+    console.log("\n")
+}

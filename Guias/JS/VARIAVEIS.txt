@@ -1,0 +1,40 @@
+VARIAVEIS
+
+ARRAY
+var estados = ["Rio de Janeiro", "São Paulo", "Bahia"];
+
+console.log(estados[0]); para mostrar uma posição do array
+
+
+UNDEFINED
+É tanto o nome de um tipo quanto o nome do único valor que esse tipo pode receber
+
+var nome;
+console.log(nome); //vai imprimir undefined
+
+
+NaN é o resultado de uma operação matemática que falhou.
+
+
+NULL
+adia intencionalmente ou não atribuir um valor a variavel
+var nome  = null;
+console.log(nome);
+// vai imprimir null
+
+null é considerado 0 pelo JavaScript
+
+CONSTANTE
+
+const url = "https://www.devmedia.com.br/";
+
+
+
+CONVERSÃO PARA NUMBER
+
+true = 1
+false = 0
+null = 0
+undedfined = NaN
+
+parseInt(var/texto) converte de String para Number

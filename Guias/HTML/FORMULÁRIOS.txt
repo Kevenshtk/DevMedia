@@ -1,0 +1,53 @@
+FORMULÁRIOS
+<form>
+action é a url para onde os dados do formulário serão enviados.
+
+method="get(mostra os dados enviados), post(não mostra os dados enviados)"
+
+<textarea> é um campo para textos grandes
+
+<label> faz o campo se relaciona com o elemento
+
+
+<input>
+required faz o campo ser obrigatório
+minlength="5" faz o campo ter um minímo de caracter
+maxlength="8" faz o campo ter um máximo de caracter
+size="8" tamanho do campo
+placeholder="Nome do usuário" mostra uma dica dentro do campo 
+autocomplete="username" indica o tipo do campo
+value="F" faz ter um valor quando escolhido
+
+INPUT NUMBER
+min="0" valor minímo aceito serve para input date ex.: min="2005-01-01"
+max="10" valor máximo aceito
+step="0.5" faz o valor muda de 0.5
+
+INPUT CHECKBOX pode escolher vários
+para permitir escolher mais de um checkbox é necessário eles estarem com o mesmo nome e no final [].
+
+é usado o <label> para identificar a opição. ex.: <label>Futebol</label>
+
+para marcar o checkbox cliclando no label é preciso adicionar um id no checkbox e um for com o mesmo no do id no label.
+
+INPUT RADIO só pode escolher um (todos do mesmo grupo precisa ter o mesmo name)
+o atributo cheched faz a opção ser marcada por padrão.
+também aceita o required.
+
+input:range traz um botão para arrasta (value="" indica o valor inícial) 
+
+INPUT SELECT
+<select> usado para criar uma lista.
+selected deixa o item já selecionado.
+multiple deixa o usuário escolher mais de uma opção (É necessário ter [] no final do nome).
+size="quant" exibe a quantidade de opções indicada;
+
+<option> conteúdo da lista.
+<optgroup label="nome do grupo"> cria um grupo de opções dentro do select
+
+FIELDSET
+<fieldset> agrupa campos do form.
+<legend> é o título do fieldset.
+
+OUTPUT
+<output name="" id="">0</output> ele só monstra informações na tela e não envia

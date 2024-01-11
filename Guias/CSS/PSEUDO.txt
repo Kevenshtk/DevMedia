@@ -1,0 +1,46 @@
+PSEUDO-CLASSES
+Pseudo-classes de estado: estiliza os mais variados estados dos elementos.
+
+:hover: quando passa o mouse em cima.
+:visited: quando o link já foi acessado.
+
+Pseudo-classes de estrutura: estiliza elementos com base em suas posição.
+
+OF-TYPE
+:first-of-type: estiliza o primeiro elemento especificado no seletor detro do elemento pai.
+
+:last-of-type: estiliza o último elemento especificado no seletor detro do elemento pai.
+
+:nth-of-type(2(posição)ou odd(aplica o estilo a elementos impares), even(aplica o estilo a elementos pares))
+: estiliza o elemento na posição indicada especificado no seletor detro do elemento pai
+
+CHILD
+:first-child: estiliza o primeiro elemento filho detro do elemento pai.
+ex.: p:first-child vai estilizar todos os elemento p que são os primeiros detro do elemento pai.
+
+:last-child: estiliza o último elemento filho detro do elemento pai.
+
+:nth-child(2(posição)ou odd(aplica o estilo a elementos impares), even(aplica o estilo a elementos pares))
+: estiliza o elemento na posição indicada especificado no seletor detro do elemento pai.
+exe.: p:nth-of-type(2) vai estilizar todos os p que são os segundos detro do elemento pai.
+
+PSEUDO-ELEMENTOS
+modifica partes de um elemento
+
+::first-letter: estiliza a primeira letra(Se o seletor aparecer várias vezes o estilo será aplicado à todas as primeiras letras) 
+
+::first-line: estiliza a primeira linha
+
+::after: depois do elemento
+
+::before: antes do elemento
+
+ex.:
+a.externo::after{
+    content(obrigatório): '\00A0\1F517'; informa o texto que será exibido antes do elemento
+}
+
+
+classes
+active: quando click ocorre a ação 
+focus-within: quando o elemento fica em foco

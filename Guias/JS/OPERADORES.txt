@@ -1,0 +1,25 @@
+OPERADORES
+
++=, -=, *=, /= ou %=
+
+var preco = 20;
+preco += 1; IGUAL preco = preco + 1
+
+
+OPERADORES DE COMPARAÇÃO
+
+==, !=, <, >, <=, >=, === e !==
+
+=== : comparar se os dois valores são iguais tanto em valor quanto em tipo
+
+INCREMENTO
+
+++numero_2: é incrementado em 1 antes que qualquer outra coisa ser feita com a variável.
+
+numero_1++: é o opostos é incrementado em 1 após outra coisa ser feita
+
+OPERADORES LÓGICOS
+
+true &&(E) false // false
+false ||(OU) false // false
+!true // false

@@ -1,0 +1,40 @@
+POSITION
+position: munda a posição de um elemento
+
+relative é como um mapa para o absolute usado no elemento pai
+
+absolute remove o elemento do fluxo normal do HTML, tem as bordas da página com referência
+ex.:
+HTML
+<div class="container">
+  <img>
+</div>
+
+CSS
+.container {
+    position: relative;
+    margin-top: 30px;
+    border: 2px solid;
+    background: #ecececbf;
+    width: 320px;
+    height: 400px;
+    padding: 10px;
+}
+
+img {
+    width: 100px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
+
+fixed deixa o elemento fixo na tela
+
+sticky muda a posição dependendo rolagem
+O.B.S.: O elemento tem q está com o position relative ou absolute
+
+MOVENDO ELEMENTOS
+top valor; não é usada junto com bottom
+right ; não é usada junto com left
+bottom
+left

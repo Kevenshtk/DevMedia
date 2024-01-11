@@ -1,0 +1,37 @@
+INPUT
+
+1) instalação do plugin
+
+Abra a pasta do projeto -> No terminal - npm init -y -> npm install readline-sync
+
+2) configurando o plugin
+
+Abra o arquivo package.json -> adicione "type": "module", de baixo de "description": "",
+
+3) testando
+
+import entradaDados from 'readline-sync'; importa o plugin
+
+const nome = entradaDados.question('Digite seu nome: '); input
+
+console.log('Olá, '+nome);
+
+No termial entra na pasta do projeto -> node nomeProjeto.js - para executar o código
+
+
+
+Tratando números
+
+import entradaDados from 'readline-sync';
+
+console.log("Calculadora de soma entre x e y: \n")
+
+let x = entradaDados.question("Informe o valor de x: ")
+let y = entradaDados.question("Informe o valor de y: ")
+
+let soma = Number(x) + Number(y);
+
+console.log(x+" + "+y+" = "+soma);
+
+Number() : converte o valor de string para number, só é usada quando é preciso fazer
+uma soma

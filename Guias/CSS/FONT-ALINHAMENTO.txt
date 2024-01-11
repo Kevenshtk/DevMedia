@@ -1,0 +1,23 @@
+FONT
+font-size: 1em; define o tamanho da fonte
+font-weight(lighter, normal, bold, bolder) é o peso da fonte
+font-style(italic)
+text-decoration(underline, none) texto sublinhado/ não sublinhado
+text-transform: uppercase; deixa todas as letras maíusculas
+font-variant: small-caps; deixa todas as letras maíusculas e as primeiras letras maiores
+line-height: em; é o espaço entre linha
+
+Shorthand
+font(font-style-> font-weight-> font-size-> font-family(ordem))
+
+
+ @font-face (para colocar fontes baixadas) { usar fontes baixadas
+            font-family: nome da fonte;
+            src: url('nome e formato da fonte') format('opentype(otf) truetype(ttf)');
+        }
+
+
+ALINHAMENTO
+text-align (center, left, right, justify); para alinha o texto
+text-indent: px; da um espaço na primeira linha do p
+vertical-align(top, middles, bottom) para alinha o texto em tabelas

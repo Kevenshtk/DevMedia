@@ -1,0 +1,7 @@
+BORDA
+Shorthand
+border(width, style, color): 1px(tamanho) solid(tipo(dashed, groove, ridge, inset, outset)) white(cor);
+
+border-radius: 20px 0px(borda direita C/esquerda B); para aredondar a borda
+border-collapse: collapse; junta as bordas de uma tabela
+border-spacing: 15px; Defina o espaçamento das bordas de uma tabela

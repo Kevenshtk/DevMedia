@@ -1,0 +1,62 @@
+IF E AS ANOMALIAS
+
+x = ""; é convertida para false
+y = 0; é convertida para false
+
+if(x == y) false com false = true{
+	x e y são iguais;   ela entra aqui
+} else{
+	x e y são diferentes;
+}
+
+
+x = 1; é convertida para false
+y = true; é convertida para false
+
+if(x == y) true com true = true{
+	x e y são iguais;   ela entra aqui
+} else{
+	x e y são diferentes;
+}
+
+
+IF TERNÁRIO
+
+Comum
+var status = "";
+if ( nota > 7 ) {
+status = "Aprovado";
+}
+else {
+ status = "Reprovado";
+}
+
+Ternário
+
+var status = nota > 7 ?(IF) "Aprovado" :(ELSE) "Reprovado";
+
+Mútiplas condições
+
+var mensagem = (mes == 11 || mes == 12) ? "Promoção" : "Preço normal";
+
+
+
+CURTO_CIRCUITO
+
+só aceita o valor true
+ele não possui o esle
+
+var aprovado = true;
+
+aprovado(true) && console.log("Parabéns"); 
+
+
+//Declaração da constante nome
+const nome = 'Camila';
+
+//Aqui é verificado se o nome possui ao menos um caractere
+//Retorna true se possuir e false caso contrário
+const nomeValido = nome.length > 0;
+
+//Imprime o nome no console se for diferente de vazio(false)
+nomeValido(true) && console.log(nomeValido);

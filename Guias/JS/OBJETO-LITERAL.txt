@@ -1,0 +1,10 @@
+OBJETO LITERAL
+Usado quanto precisamos agrupar dados de um mesmo domínio
+
+var produto = {
+    id(chave): 9(valor),
+    nome: "Cafeteira Elétrica",
+    valor: 99.00
+};
+
+console.log(aula(nome_obj).id(dado)); para mostrar o valor do objeto

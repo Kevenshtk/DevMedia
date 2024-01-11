@@ -1,0 +1,29 @@
+MEDIDAS
+valores relativos define o valor com base em um outro elemento
+100%, 50%
+
+ex.:
+width: calc(100vw - 60(lado E + lado D)); fazer o css fazer cálculos com valores relativos
+margin: 30px;
+
+width: calc((100%/3(cada img vai ocupar 1/3 do espaço)) - 3px(margem));
+margin: 0 1.5px;
+
+1em é uma vez o font-size do elemento
+ex.:
+html { font-size: 14px; }
+.container { font-size: 2em = 28px }
+
+vw é 1/100 da largura da tela.
+vh é 1/100 da altura da tela.
+
+height 98vh: ;altura
+width: vw;largura
+max-width: ;lartura máxima
+min-height: ; altura miníma
+min-w, h e max w, h sempre vão se basear no tamanho definido no width ou height;
+
+ex.:
+width: 100%;
+min-width: 600px;
+max-width: 1024px;

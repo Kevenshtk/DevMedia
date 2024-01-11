@@ -1,0 +1,7 @@
+PADDING
+padding(top, right, bottom, left): é o espaçamento interno
+1 valor: configura todos no msm valor
+2 valores: configura o primeiro valor cima/baixo e o segundo valor direita/esquerda 
+
+MARGEM
+margin(top, right, bottom, left): auto deixa a caixa no centro da tela

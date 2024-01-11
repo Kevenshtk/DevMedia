@@ -1,0 +1,4 @@
+OVERFLOW
+overflow (scroll(exibe uma barra de rolagem), auto(só exibe uma barra de rolagem quando o tamanho é ultrapassado))cria uma barra de rolagem no elemento não deixando ele ultrapassar o tamanho
+overflow-x(horizontal) e -y(vertical) controla apenas uma barra de rolagem
+overflow: auto(-x) scroll(-y)

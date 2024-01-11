@@ -1,0 +1,21 @@
+LISTA
+<ol> lista ordenada
+
+<ol start="4"> a numeração começará a partir do número
+<ol type="1"> lista númerada
+<ol type="a"> listas com letras minúsculas
+<ol type="A"> listas com letras maiuscular
+<ol type="i"> lista com números romanos minúsculas
+<ol type="I"> lista com números romanos maiuscular
+
+<ul> lista não ordenada
+
+<ul type="disc"> circulo
+<ul type="circle"> circulo vázio
+<ul type="square"> quadrando
+
+<li> intens da lista
+
+<dl> lista de definições
+<dt> termo
+<dd> descrição
