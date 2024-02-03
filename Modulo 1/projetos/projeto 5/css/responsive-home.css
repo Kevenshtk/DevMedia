@@ -4,7 +4,7 @@
         margin: 0 auto;
     }
 
-    .topo-links span{
+    .topo-links a{
         font-size: 14px;
     }
 
@@ -18,13 +18,17 @@
         margin: 0 auto;
     }
 
-    /* Seção Primeiro Anúncio */
+    /* Seções Anúncio */
     .container-primeiro-anuncio div, .container-segundo-anuncio h2{
         max-width: 200px;
     }
 
     .container-primeiro-anuncio div h2, .container-segundo-anuncio h2{
         font-size: 18px;
+    }
+
+    .container-primeiro-anuncio a, .container-segundo-anuncio a{
+        width: 150px;
     }
 
     .container-primeiro-anuncio p{
@@ -36,12 +40,38 @@
     }
 
     /* Seção Planos */
-    .secao-planos h2, .secao-planos h2 span{
-        font-size: 18px;
+    .secao-planos h2, .secao-info h2{
+        font-size: 19px;
     }
 
+    /* Seção Planos Tabela */
     .secao-planos .tabela{
         width: 100%;
         overflow-x: auto;
     }
+
+    table thead th h3{
+        font-size: 14px;
+    }
+
+    table tbody td{
+        font-size: 14px;
+    }
+
+    /* Rodapé */
+    .container-contatos, .container-copyright{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px){
+    .container-primeiro-anuncio a, .container-segundo-anuncio a{
+        width: 120px;
+    }
+
+    .container-primeiro-anuncio a img, .container-segundo-anuncio a img{
+        display: none;
+    }
+
+    
 }
