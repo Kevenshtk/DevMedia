@@ -20,7 +20,6 @@
 .topo-logo{
     display: flex;
     flex-direction: row;
-    
 }
 
 .topo-logo img{
@@ -35,20 +34,16 @@
 .topo-links{
     width: 390px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .topo-links a{
-    font-size: 18px;
     font-weight: 500;
+    font-size: 18px;
     text-decoration: none;
     color: #233032;
-    transition-duration: 0.5s;
 }
 
-.topo-links a:hover{
-    font-size: 19px;
-}
 
 /* Banner da página */
 .secao-banner{
@@ -71,7 +66,6 @@
 }
 
 .container-banner .info p{
-    font-size: 16px;
     line-height: 26px;
     word-spacing: 3px;
 }
@@ -101,7 +95,7 @@
 .container-primeiro-anuncio, .container-segundo-anuncio{
     padding: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -144,9 +138,9 @@
 }
 
 .secao-info h2{
-    width: 100%;
+    text-align: center;
     font-size: 32px;
-    margin: 0 auto 60px;
+    margin-bottom: 70px;
 }
 
 .secao-info h2 span{
@@ -191,13 +185,19 @@
 }
 
 table{
+    width: 90%;
     border-radius: 5px;
     margin: auto;
     box-shadow: 0px 2px 40px 15px rgba(47, 133, 214, 0.418);
 }
 
-table thead th{
-    text-align: center;
+table thead th div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 280px;
     padding: 20px 0;
     background-color: #fff;
 }
@@ -208,16 +208,13 @@ table thead th h3{
 
 table thead th img{
     width: 100px;
-    margin: auto;
 }
 
 table thead th p{
-    max-width: 150px;
+    width: 150px;
     font-size: 13px;
     font-weight: 500;
     color: #a89f9f;
-    padding-top: 10px;
-    margin: auto;
 }
 
 table tbody td{
@@ -255,17 +252,12 @@ table tbody td{
 .rodape-logo{
     width: 320px;
     margin: 70px auto 40px;
-    position: relative;
+    display: flex;
+    
 }
 
 .rodape-logo img{
     width: 80px;
-}
-
-.rodape-logo div{
-    position: absolute;
-    top: 0;
-    left: 95px;
 }
 
 .rodape-logo p{
@@ -283,9 +275,8 @@ table tbody td{
 .container-copyright{
     text-align: center;
     font-weight: 600;
-    font-size: 18px;
     background-color: #f1f3f7;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .container-copyright span{
