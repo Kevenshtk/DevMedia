@@ -1,0 +1,10 @@
+let dataAtual = new Date()
+
+console.log("Ano " + dataAtual.getFullYear())
+console.log("Mês " + dataAtual.getMonth())
+console.log("Dia " + dataAtual.getDate())
+console.log("Dia da semana " + dataAtual.getDay())
+console.log("Horas " + dataAtual.getHours())
+console.log("Minutos " + dataAtual.getMinutes())
+console.log("Segundos " + dataAtual.getSeconds())
+console.log("Milesegudos " + dataAtual.getMilliseconds())
