@@ -14,6 +14,7 @@
 /* Topo do site */
 
 header{
+    width: 100%;
     background-color: #fff454;
     padding: 10px 0;
 }
@@ -25,10 +26,16 @@ header{
 }
 
 .img-top-left{
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 150px;
 }
 
 .img-top-right{
+    background-image: url(../img/disney.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 320px;
 }
 
@@ -65,12 +72,11 @@ header{
 }
 
 .top-bottom{
-    width: 100%;
-    margin-top: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top: 10px;
 }
 
 
@@ -93,16 +99,12 @@ header{
 /* Menu topo */
 
 .bottom-center{
-    width: 57%;
     display: flex;
     align-items: center;
 }
 
-
 .menu{
     display: flex;
-    flex-direction: row;
-
     list-style: none;
 }
 
@@ -163,7 +165,8 @@ main{
 
 .interessar{
     font-size: 14px;
-    line-height: 50px;
+    line-height: 18px;
+    padding: 10px 0;
 }
 
 .interessar p span{
@@ -212,7 +215,7 @@ main{
 
 /* ------- */
 
-.top-card .status{
+.top-card .status, .mobile .status{
     font-size: 14px;
     color: #000000a6;
 }
@@ -237,7 +240,7 @@ main{
 
 /* ------- */
 
-.top-card .avaliacao{
+.top-card .avaliacao, .mobile .avaliacao{
     color: #000000a6;
     font-size: 14px;
     display: flex;
@@ -299,6 +302,21 @@ main{
     color: #c9c9c9;
 }
 
+/* ------- */
+
+.estoque .titulo{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.estoque .quant{
+    background-color: #f0f0f085;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 /* ------- */
 
@@ -371,7 +389,7 @@ main{
 /* Anúncios do vendedor */
 
 .area-anuncios-vendedor{
-    margin: 20px 0;
+    margin-right: 8px;
     padding-bottom: 28px;
     border-bottom: 1px solid #c9c9c9;
 }
@@ -384,14 +402,13 @@ main{
 .area-card{
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
     padding: 15px 0;
 }
 
 .card-anuncio{
     width: 400px;
     display: flex;
-    flex-direction: row;
 
     border: 1px solid #ededed;
     border-radius: 5px;
@@ -431,6 +448,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     padding: 15px 0;
     border-bottom: 1px solid #c9c9c9;
@@ -455,7 +473,7 @@ main{
 /* Descrição do produto */
 
 .area-descricao p{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     color: #818181;
 }
