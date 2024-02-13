@@ -1,4 +1,4 @@
-GETTERS DE CONVERSÃO
+GETTERS DE CONVERSÃO - são usados para retornar um valor
 
 .toString() retorna uma string que representa o objeto
 

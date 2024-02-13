@@ -1,0 +1,29 @@
+.setFullYear() - altera o ano
+
+dataAtual.setFullYear(2020)
+console.log(dataAtual)
+
+.setMonth() = altera o mês (0 à 11)
+
+.setDate() - altera o dia do mês
+
+.setHours() - altera a hora (0 à 23)
+
+.setMinutes()  - altera os minutos (0 à 59)
+
+.setSeconds() - altera os segundos (0 à 59)
+
+.setMilliseconds() - altera os milisegundos
+
+
+setters UTC(ele é a ref para se calcular os fusos horários)
+
+dataAtual.setUTCFullYear(1998);
+dataAtual.setUTCMonth(5);
+dataAtual.setUTCDate(20);
+dataAtual.setUTCHours(11);
+dataAtual.setUTCMinutes(0);
+dataAtual.setUTCSeconds(59);
+dataAtual.setUTCMilliseconds(15);
+
+.setTime() - altera o timestamp(representa numeros de uma data UTC) da data
