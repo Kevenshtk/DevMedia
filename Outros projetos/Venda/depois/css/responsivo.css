@@ -28,9 +28,14 @@
     }
 
     .img-top-right{
+        display: none;
+    }
+
+    .img-top-right-m{
         width: 50px;
         background-image: url(../img/icon/carrinho-de-compras.png);
         background-position: center;
+        background-repeat: no-repeat;
         background-size: 30px;
     }
 
