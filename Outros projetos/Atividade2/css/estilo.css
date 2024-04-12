@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body{
+    font-family: "Outfit", sans-serif;
+    background-image: url(../img/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.form-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0;
+}
+
+.lista-form{
+    width: 510px;
+    height: 650px;
+    position: relative;
+}
+
+.btn-seta{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar{
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background-color: #bcbabc7c;
+}
+
+.form{
+    opacity: 0;
+    background-color: rgba(201, 201, 201, 0.38);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s ease-in-out;
+}
+
+.form.selecionado{
+    opacity: 1;
+    z-index: 1;
+}
+
+.linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cep{
+    width: 50%;
+}
+
+#logradouro, #cidade{
+    width: 60%
+}
+
+#numero , #estado{
+    width: 30%;
+}
+
+@media(max-width:580px){
+    h1, h2{
+        font-size: 26px;
+    }
+}
