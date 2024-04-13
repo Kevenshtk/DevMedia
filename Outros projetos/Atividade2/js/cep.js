@@ -2,7 +2,7 @@ function buscarEndereco() {
     var cep = document.getElementById('cep').value;
 
     if (cep.length !== 8) {
-        alert('O CEP deve ter 8 dígitos');
+        Swal.fire("O CEP deve ter 8 dígitos");
         return;
     }
 
