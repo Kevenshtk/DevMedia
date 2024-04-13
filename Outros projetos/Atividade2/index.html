@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição para Evento de Games</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <main class="form-slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="img/seta.png" alt="seta voltar">
+        </button>
+
+      <div class="lista-form">
+        <div class="container mt-5 form selecionado">
+        <h1 class="mb-4">Área de inscrição</h1>
+        <form action="enviar_email.php" method="post">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Endereço de e-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="idade" class="form-label">Idade</label>
+            <input type="number" class="form-control" max="100" maxlength="3" id="idade" name="idade" required>
+          </div>
+          <div class="mb-3">
+            <label for="jogo_preferido" class="form-label">Jogo preferido</label>
+            <input type="text" class="form-control" id="jogo_preferido" name="jogo_preferido">
+          </div>
+          <div class="mb-3">
+            <label for="plataforma_preferida" class="form-label">Plataforma preferida</label>
+            <select class="form-select" id="plataforma_preferida" name="plataforma_preferida">
+              <option value="">Selecione a plataforma</option>
+              <option value="PC">PC</option>
+              <option value="PlayStation">PlayStation</option>
+              <option value="Xbox">Xbox</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="descricao" class="form-label">Breve descrição sobre seu interesse em games</label>
+            <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+          </div>
+        </div>
+
+        <div class="container mt-5 form">
+          <h2>Preencha seu Endereço</h2>
+              <div class="form-group">
+                  <label for="cep">CEP</label>
+                  <div class="linha">
+                    <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite seu CEP">
+                    <button type="button" class="btn btn-primary" id="btn-buscar">Buscar</button>
+                  </div>
+                  <small class="form-text text-muted">Se souber o CEP, o restante do endereço será preenchido automaticamente.</small>
+              </div>
+            <div class="form-group">
+                    <div class="linha">
+                      <label for="logradouro">Logradouro</label>
+                      <label for="numero">Número</label>
+                    </div>
+                <div class="linha">
+                  <input type="text" class="form-control" id="logradouro" name="logradouro" placeholder="Digite o Logradouro">
+                  <input type="text" class="form-control campo-p" id="numero" name="numero" placeholder="Digite o Número">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Digite o Bairro">
+              </div>
+              <div class="form-group">
+                  <label for="complemento">Complemento</label>
+                  <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Digite o Complemento">
+              </div>
+              <div class="form-group">
+                  <div class="linha">
+                    <label for="cidade">Cidade</label>
+                    <label for="estado">Estado</label>
+                  </div>
+
+                  <div class="linha">
+                    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a Cidade">
+                    <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite o Estado">
+                  </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
+
+            </form>
+          </div>
+        </div>
+
+        <button class="btn-seta" id="btn-avancar">
+            <img src="img/seta.png" alt="seta avançar">
+        </button>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/seta.js"></script>
+    <script src="js/cep.js"></script>
+    <script src="js/validacao.js"></script>
+
+</body>
+</html>
