@@ -7,3 +7,13 @@ function imprimir(nome da função) (texto(parametro)) {
 }
 
 imprimir(texto) chama a função
+
+
+ARROW FUNCTIONS
+
+const retorna_media = (nota_1, nota_2) =>{
+    
+    let media = (nota_1 + nota_2) / 2
+    return media;
+
+}
