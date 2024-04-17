@@ -1,8 +1,7 @@
 document.getElementById('btn-enviar').addEventListener('click', function() {
     var nome = document.getElementById('nome').value;
-    var celular = document.getElementById('celular').value;
     var email = document.getElementById('email').value;
-    var empresa = document.getElementById('empresa').value;
+    var idade = document.getElementById('idade').value;
     var logradouro = document.getElementById('logradouro').value;
     var numero = document.getElementById('numero').value;
     var bairro = document.getElementById('bairro').value;
@@ -10,22 +9,12 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
     var estado = document.getElementById('estado').value;
 
     var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    var regexCelular = /^\(\d{2}\) \d{5}-\d{4}$/;
-
-    var palestrasSelecionadas = document.querySelectorAll('input[type="checkbox"]:checked');
 
     if(!nome){
         Swal.fire({
             icon: "error",
             title: "Oops...",
             text: "Por favor, preencha seu nome."
-        });
-
-    } else if(!celular || !regexCelular.test(celular)){
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            html: "Por favor, preencha seu celular.<br> Ex.:(99) 99999-9999"
         });
 
     } else if(!email || !regexEmail.test(email)){
@@ -35,18 +24,11 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
             text: "Por favor, preencha seu email."
         });
 
-    } else if(!empresa){
+    } else if(!idade){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, preencha sua empresa."
-        });
-
-    } else if(palestrasSelecionadas.length === 0){
-        Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Por favor, escolha pelo menos uma palestra."
+            text: "Por favor, preencha sua idade."
         });
 
     } else if(!logradouro){
@@ -60,7 +42,7 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, preencha seu número."
+            text: "Por favor, preencha seu numero."
         });
 
     } else if(!bairro ){
