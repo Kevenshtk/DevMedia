@@ -23,31 +23,41 @@
             <input type="text" class="form-control" id="nome" name="nome" required>
           </div>
           <div class="mb-3">
+            <label for="tel" class="form-label">Celular*</label>
+            <input type="tel" class="form-control" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx" required>
+          </div>
+          <div class="mb-3">
             <label for="email" class="form-label">Endereço de e-mail*</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com" required>
           </div>
           <div class="mb-3">
-            <label for="idade" class="form-label">Idade*</label>
-            <input type="number" class="form-control" max="100" maxlength="3" id="idade" name="idade" required>
+            <label for="idade" class="form-label">Empresa*</label>
+            <input type="text" class="form-control" id="empresa" name="empresa" required>
           </div>
           <div class="mb-3">
-            <label for="jogo_preferido" class="form-label">Jogo preferido</label>
-            <input type="text" class="form-control" id="jogo_preferido" name="jogo_preferido">
+            <label for="jogo_preferido" class="form-label">Cargo</label>
+            <input type="text" class="form-control" id="cargo" name="cargo">
           </div>
           <div class="mb-3">
-            <label for="plataforma_preferida" class="form-label">Plataforma preferida</label>
-            <select class="form-select" id="plataforma_preferida" name="plataforma_preferida">
-              <option value="">Selecione a plataforma</option>
-              <option value="PC">PC</option>
-              <option value="PlayStation">PlayStation</option>
-              <option value="Xbox">Xbox</option>
-              <option value="Nintendo Switch">Nintendo Switch</option>
-              <option value="Outro">Outro</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="descricao" class="form-label">Breve descrição sobre seu interesse em games</label>
-            <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+            <label for="palestras" class="form-label">Palestras*</label>
+            <div class="form-group form-check" id="palestras">
+              <div class="opt">
+                <input type="checkbox" class="form-check-input" id="option-1">
+                <label class="form-check-label" for="option-1" id="opt-palestra">Novas tecnologias</label>
+              </div>        
+              <div class="opt">
+                <input type="checkbox" class="form-check-input" id="option-2">
+                <label class="form-check-label" for="option-2" id="opt-palestra">Computadores Quânticos</label>
+              </div>     
+              <div class="opt">
+                <input type="checkbox" class="form-check-input" id="option-3">
+                <label class="form-check-label" for="option-3" id="opt-palestra">Soft skills</label>
+              </div>          
+              <div class="opt">
+                <input type="checkbox" class="form-check-input" id="option-4">
+                <label class="form-check-label" for="option-4" id="opt-palestra">Home office</label>
+              </div>
+            </div>
           </div>
         </div>
 
