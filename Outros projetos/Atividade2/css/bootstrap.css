@@ -1980,7 +1980,7 @@ textarea.form-control {
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
-  margin-left: -1.25rem;
+  margin-left: -1.10rem;
 }
 
 .form-check-input:disabled ~ .form-check-label {
@@ -7543,7 +7543,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.2rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .ml-4,
