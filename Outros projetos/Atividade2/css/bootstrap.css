@@ -8922,7 +8922,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #002752;
+  font-style: italic;
 }
 
 .text-black-50 {

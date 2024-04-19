@@ -86,25 +86,33 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
 
     } else {
         Swal.fire({
-            title: "Case lá...",
-            text: "Deseja enviar sua inscrição ?",
+            title: "Quase lá...",
+            text: "Deseja enviar sua inscrição?",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Sim"
-
         }).then((result) => {
             if (result.isConfirmed) {
-            Swal.fire({
-            title: "Muito bom !",
-            text: "Inscrição enviada com sucesso",
-            icon: "success"
-
-            }).then(() => {
-                document.getElementById("formInscricao").reset();
-            });
+                Swal.fire({
+                    title: "Muito bom!",
+                    text: "Inscrição enviada com sucesso",
+                    icon: "success",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Sim, outra inscrição",
+                    cancelButtonText: "Não, obrigado"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.getElementById("formInscricao").reset();
+                    } else {
+                        document.getElementById("formInscricao").reset();
+                    }
+                });
             }
         });
+        
     }
 });
