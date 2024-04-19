@@ -14,11 +14,11 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
 
     var palestrasSelecionadas = document.querySelectorAll('input[type="checkbox"]:checked');
 
-    if(!nome){
+    if(!nome || nome.length < 10){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, preencha seu nome."
+            text: "Por favor, preencha seu nome completo."
         });
 
     } else if(!celular || !regexCelular.test(celular)){
