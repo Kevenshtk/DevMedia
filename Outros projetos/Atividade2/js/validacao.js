@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var telefoneInput = document.getElementById('celular');
+    Inputmask('(99) 99999-9999').mask(telefoneInput);
+});
+
 document.getElementById('btn-enviar').addEventListener('click', function() {
     var nome = document.getElementById('nome').value;
     var celular = document.getElementById('celular').value;
