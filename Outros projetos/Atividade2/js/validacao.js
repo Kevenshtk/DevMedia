@@ -102,12 +102,12 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
             if (result.isConfirmed) {
                 Swal.fire({
                     title: "Muito bom!",
-                    text: "Inscrição enviada com sucesso",
+                    html: "Inscrição enviada com sucesso.<br> deseja realizar outra insrição ?",
                     icon: "success",
                     showCancelButton: true,
                     confirmButtonColor: "#3085d6",
                     cancelButtonColor: "#d33",
-                    confirmButtonText: "Sim, outra inscrição",
+                    confirmButtonText: "Sim",
                     cancelButtonText: "Não, obrigado"
                 }).then((result) => {
                     if (result.isConfirmed) {
