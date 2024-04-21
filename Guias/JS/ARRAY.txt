@@ -1,0 +1,69 @@
+.PUSH() insere um elemento no array
+
+nomeArray.push("valor inserir")
+
+
+.SPLICE() remove elementos no array
+
+nomeArray.splice(2(posição inicial),1(quant elementos))
+
+Ex.:
+const diasDaSemana = [
+    "domingo", "segunda-feira", "terça-feira",
+    "quarta-feira", "quinta-feira", "sexta-feira", "sábado"
+];
+
+diasDaSemana.splice(2,1);
+// removendo "terça-feira"
+
+diasDaSemana.splice(1,3);
+// removendo "segunda-feira", "terça-feira", "quarta-feira"
+
+
+.FOREACH() é usada para percorrer um array e executar uma fução
+
+nomeArray.forEach(nomeFunção);
+
+Ex.:
+const produtos = [
+  { id: 1, nome: 'Açucar', estoque: 100, valor: 2.00 },
+  { id: 2, nome: 'Álcool 70', estoque: 50, valor: 9.95 },
+  { id: 3, nome: 'Luvas descartáveis', estoque: 1000, valor: 2.50 },
+];
+
+function imprimirProduto (produto(elemento), index(posição)) {
+  console.log( index + ' - ' + produto.nome );
+}
+
+produtos.forEach(imprimirProduto);
+
+
+.MAP() é usado para percorrer o array e criar um novo
+
+const novosArray = primeiroArray.map(nomeFunção);
+
+Ex.:
+const carros = [
+  { marca: 'Fiat', modelo: 'Uno', anoFabricacao: 2015 },
+  { marca: 'GM', modelo: 'Onix', anoFabricacao: 2018 },
+  { marca: 'Ford', modelo: 'KA+', anoFabricacao: 2018 },
+  { marca: 'Fiat', modelo: 'Cronos', anoFabricacao: 2020 },
+];
+
+function retornaCarro(carro) {
+  return carro.marca + ' ' + carro.modelo + ' ano: ' + carro.anoFabricacao;
+}
+
+const novosCarros = carros.map(retornaCarro);
+
+console.log(novosCarros);
+
+/*
+* vai imprimir:
+[
+  'Fiat Uno ano: 2015'
+  'GM Onix ano: 2018'
+  'Ford KA+ ano: 2018'
+  'Fiat Cronos ano: 2020'
+]
+*/
