@@ -1,7 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var telefoneInput = document.getElementById('celular');
+    Inputmask('(99) 99999-9999').mask(telefoneInput);
+});
+
 document.getElementById('btn-enviar').addEventListener('click', function() {
     var nome = document.getElementById('nome').value;
+    var celular = document.getElementById('celular').value;
     var email = document.getElementById('email').value;
-    var idade = document.getElementById('idade').value;
+    var empresa = document.getElementById('empresa').value;
     var logradouro = document.getElementById('logradouro').value;
     var numero = document.getElementById('numero').value;
     var bairro = document.getElementById('bairro').value;
@@ -9,12 +15,22 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
     var estado = document.getElementById('estado').value;
 
     var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var regexCelular = /^\(\d{2}\) \d{5}-\d{4}$/;
 
-    if(!nome){
+    var palestrasSelecionadas = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    if(!nome || nome.length < 10){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, preencha seu nome."
+            text: "Por favor, preencha seu nome completo."
+        });
+
+    } else if(!celular || !regexCelular.test(celular)){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            html: "Por favor, preencha seu celular.<br> Ex.:(99) 99999-9999"
         });
 
     } else if(!email || !regexEmail.test(email)){
@@ -24,11 +40,18 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
             text: "Por favor, preencha seu email."
         });
 
-    } else if(!idade){
+    } else if(!empresa){
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, preencha sua idade."
+            text: "Por favor, preencha sua empresa."
+        });
+
+    } else if(palestrasSelecionadas.length === 0){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Por favor, escolha pelo menos uma palestra."
         });
 
     } else if(!logradouro){
@@ -42,7 +65,7 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Por favor, preencha seu numero."
+            text: "Por favor, preencha seu número."
         });
 
     } else if(!bairro ){
@@ -68,25 +91,33 @@ document.getElementById('btn-enviar').addEventListener('click', function() {
 
     } else {
         Swal.fire({
-            title: "Case lá...",
-            text: "Deseja enviar sua inscrição ?",
+            title: "Quase lá...",
+            text: "Deseja enviar sua inscrição?",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Sim"
-
         }).then((result) => {
             if (result.isConfirmed) {
-            Swal.fire({
-            title: "Muito bom !",
-            text: "Inscrição enviada com sucesso",
-            icon: "success"
-
-            }).then(() => {
-                document.getElementById("formInscricao").reset();
-            });
+                Swal.fire({
+                    title: "Muito bom!",
+                    html: "Inscrição enviada com sucesso.<br> deseja realizar outra insrição ?",
+                    icon: "success",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Sim",
+                    cancelButtonText: "Não, obrigado"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.getElementById("formInscricao").reset();
+                    } else {
+                        document.getElementById("formInscricao").reset();
+                    }
+                });
             }
         });
+        
     }
 });
