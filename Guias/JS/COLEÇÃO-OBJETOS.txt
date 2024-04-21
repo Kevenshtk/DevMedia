@@ -13,10 +13,3 @@ var colecao_disciplinas = [
 console.log(colecao_disciplinas(nome_colecao)[0](posição).id(valor) ); // 1
 
 var diciplina = colecao_disciplinas[1]; para acessar as informações dentro da coleção
-
-
-ACESSAR COLEÇÃO
-
-colecao_signos[0].nome
-
-colecao_signos[0]["Nome"]
