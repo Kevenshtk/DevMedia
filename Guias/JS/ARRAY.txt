@@ -3,6 +3,7 @@
 nomeArray.push("valor inserir")
 
 
+
 .SPLICE() remove elementos no array
 
 nomeArray.splice(2(posição inicial),1(quant elementos))
@@ -18,6 +19,7 @@ diasDaSemana.splice(2,1);
 
 diasDaSemana.splice(1,3);
 // removendo "segunda-feira", "terça-feira", "quarta-feira"
+
 
 
 .FOREACH() é usada para percorrer um array e executar uma fução
@@ -36,6 +38,7 @@ function imprimirProduto (produto(elemento), index(posição)) {
 }
 
 produtos.forEach(imprimirProduto);
+
 
 
 .MAP() é usado para percorrer o array e criar um novo
@@ -67,3 +70,75 @@ console.log(novosCarros);
   'Fiat Cronos ano: 2020'
 ]
 */
+
+
+
+.FILTER() é usada para filtar os elementos de um array e cria um novo array
+com os elementos filtrados
+
+const novosArray = primeiroArray.filter(nomeFunção);
+
+const carros = [
+    { marca: 'Fiat', modelo: 'Uno', anoFabricacao: 2015 },
+    { marca: 'GM', modelo: 'Onix', anoFabricacao: 2018 },
+    { marca: 'Ford', modelo: 'KA+', anoFabricacao: 2018 },
+    { marca: 'Fiat', modelo: 'Cronos', anoFabricacao: 2020 },
+  ];
+
+  function retornarCarroFiat(carro) {
+    return (carro.marca == 'Fiat');
+  }
+
+  const carrosFiat = carros.filter( retornarCarroFiat );
+
+  console.log(carrosFiat);
+
+  /*
+  * vai imprimir:
+  [
+    { marca: 'Fiat', modelo: 'Uno', anoFabricacao: 2015 },
+    { marca: 'Fiat', modelo: 'Cronos', anoFabricacao: 2020 }
+  ]
+  */
+
+
+
+.REDUCE()  reduz um array para um único valor
+
+const nomeVar = array.reduce(nomeFunção, '' ou 0 para números);
+
+const itensCarrinho = [
+  { id: 1, nome: 'Açucar', qnt: 2, valor: 2.00 },
+  { id: 2, nome: 'Álcool 70', qnt: 3, valor: 9.95 },
+  { id: 3, nome: 'Luvas descartáveis', qnt: 50, valor: 2.50 },
+  { id: 4, nome: 'Papel toalha', qnt: 1, valor: 2.00 },
+];
+
+function somarValor (total, itemCarrinho) {
+  const valorTotal = itemCarrinho.qnt * itemCarrinho.valor;
+
+  return total + valorTotal;
+}
+
+const valorAPagar = itensCarrinho.reduce(somarValor, 0);
+
+console.log(valorAPagar);
+
+
+
+.SORT() ordena o conteúdo de um array e retorna o mesmo ordenado
+quando o array é de strings ele ordena por ordem alfabética
+
+array.sort( / nomeFunção)
+
+FUNÇÃO PARA ORDENAR NÚMEROS
+function ordenaNumeros(a, b){
+    return a - b; // DO MENOR PARA O MAIOR
+    return b - a; // DO MAIOR PARA O MENOR 
+}
+
+
+FUNÇÃO PARA ORDENAR OBJETOS
+function ordenaMatricula(a, b){
+    return a.nomeCampo - b.matricula
+}
