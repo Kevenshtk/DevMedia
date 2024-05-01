@@ -24,7 +24,7 @@ timestamp é uma representação numérica de uma data UTC
 
 .getTime() retorna o número de milissegundos
 
-.getTimezoneOffset() retorna em minutos a diferença de fuso horpario
+.getTimezoneOffset() retorna em minutos a diferença de fuso horario
 
 .valueOf() retorna o valor primitivo do objeto
 
