@@ -1,0 +1,33 @@
+Para usar o import/export o projeto tem que possuir um arquivo
+(package.json) e dentro dele({"type": "module"}) para funcionar
+com Node.js
+
+EXPORT
+
+export default nomeFunção; (para exportar algo)
+
+export {nomeFunção-1, nomeFunção-2} (para exportar mais de uma)
+
+
+IMPORT
+
+import nome(do q vai importar) from 'localDoArquivo'; (para importar algo)
+
+import {nomeFunção-1, nomeFunção-2} from 'localDoArquivo' (para importar mais de uma)
+
+
+REQUIRE
+forma mais antiga de importar e exporta módulos, ele não precisa
+do package.json para funcionar
+Ex.:
+EXPORTAR
+let colecao_signos[]
+
+module.exports = {
+	colecao_signos
+}
+
+IMPORTAR
+const dados = require('localArquivo')
+
+funcao.retorna_signo(dados.colecao_signos)
