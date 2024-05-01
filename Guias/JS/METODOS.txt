@@ -1,6 +1,8 @@
 METODOS
 
-Math.random(): redorna um número aleatório entre 0 e < 1(não incluido) | var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
+Math.random(): redorna um número aleatório entre 0 e < 1(não incluido 0 e 1)
+Ex.:
+var numero_sorteado = Math.random() - 0.5); trás um número entre -0.5 e 0.5
 
 Math.floor(): arredonda um número para o menor número inteiro mais próximo | var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
 
