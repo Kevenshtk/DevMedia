@@ -1,4 +1,4 @@
-import perguntas from './perguntas';
+import perguntas from './perguntas.js'
 
 document.getElementById('jogarDado').addEventListener('click', rollDado);
 
