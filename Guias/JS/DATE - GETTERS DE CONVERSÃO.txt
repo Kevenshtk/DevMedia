@@ -68,5 +68,6 @@ const personalizandoData =  {
     year: '2-digit', // 20
     day: '2-digit', // 01
   };
+
   console.log(dataAtual.toLocaleDateString('pt-BR', personalizandoData));
   // segunda-feira, 09/11/20
