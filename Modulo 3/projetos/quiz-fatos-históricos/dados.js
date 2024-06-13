@@ -1,5 +1,3 @@
-import entradaDados from 'readline-sync';
-
 const questoes = [
     { id: 1, pergunta: 'Quando aconteceu o atentado as Torres Gêmeas?', resposta: '2001' },
     { id: 2, pergunta: 'Em que ano foi detectado o primeiro paciente com coronavírus?', resposta: '2019' },
@@ -33,26 +31,4 @@ const questoes = [
     { id: 30, pergunta: 'Em que ano o homem pisou na Lua pela primeira vez?', resposta: '1969' }
   ];
 
-function embaralhaQuestoes(questoes){
-    return questoes.sort(() => Math.random() - 0.5)
-}
-
-function selecionarQuestoes(questoes, quant){
-    const questoesEmbaralhadas = embaralhaQuestoes(questoes)
-    return questoesEmbaralhadas.slice(0, quant)
-}
-
-function exibirQuestoes(questoes){
-    questoes.forEach((pergunta, index) => {
-        console.log("Pergunta "+ (index + 1) +": "+ pergunta.pergunta)
-     })
-}
-
-const quantPerguntas = 10
-
-const perguntasSelecionadas = selecionarQuestoes(questoes, quantPerguntas)
-//exibirQuestoes(perguntasSelecionadas)
-
-console.log("--------QUIZ DE FATOS HISTÓRICOS--------")
-console.log("\nSeja Bem-vindo jogador(a)!\n")
-let nome = entradaDados.question("Digite o seu nome:")
+export default questoes;
