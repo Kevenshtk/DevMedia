@@ -11,7 +11,6 @@ function exibirOpcaoListagem(opt){
                 console.log("\n");
                 console.log("Ano: ".padEnd(30,".") + ano);
                 console.log("Salário mínimo: ".padEnd(30,".") +"R$ "+ salario +",00");
-
             }
 
         break;
