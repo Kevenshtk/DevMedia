@@ -6,6 +6,13 @@ var numero_sorteado = Math.random() - 0.5); trás um número entre -0.5 e 0.5
 
 Math.floor(): arredonda um número para o menor número inteiro mais próximo | var numero_sorteado = Math.floor(Math.random() * tamanho_colecao);
 
+
 .toFixed(2(numero de casas decimais)) : usado para exibir os número depois da vigula
 
 
+.charAt(index) : retorna o valor de uma string apartir do parâmento.
+Ex.:
+
+let frase = "Oi";
+
+console.log(frase.charAt(0)); //retorna "O"

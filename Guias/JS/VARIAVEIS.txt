@@ -103,7 +103,7 @@ console.log(resultado); // JavaScript
 
 
 
-.substring(posição inicial  ,posição final  )
+.substring(posição inicial  ,posição final)
 let frase = "Ana é6-( )7-(e) 8-(s) 9-(p) 10-(e) 11-(c) 12-(i) alista em JavaScript";
 
 let substring_1 = frase.substring(6, 12);
