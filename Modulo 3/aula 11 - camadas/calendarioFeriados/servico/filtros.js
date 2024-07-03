@@ -9,7 +9,7 @@ function filtraFeriados(feriados, numeroFeriados){
         
         novaDataFeriado = new Date(feriado.data + '/' + anoAtual);
 
-        if(dataAtual > novaDataFeriado)        {
+        if(dataAtual > novaDataFeriado){
             novaDataFeriado.setFullYear(anoAtual + 1);
         }
 
