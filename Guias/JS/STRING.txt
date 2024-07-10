@@ -1,0 +1,88 @@
+STRING
+
+let text = "carro" | 'carro' | `carro`
+console.log(text[0]) trás a letra c
+
+
+
+Quebra de linha
+com "" e '' se usar \n
+com `` é só dar o enter
+
+
+
+Template
+usa `` e para concatenar usa-se ${nome-var}
+ex.: console.log(`Estude Node.js para programação ${ stack } em ${ linguagem }`)
+
+
+
+Letras maiúsculas e minúsculas
+nome-var.toUpperCase() converte em letras maiúsculas
+
+nome-var.toLowerCase() converte em letras minúsculas
+
+
+
+Remover espaços
+nome-var.trim() remove os espaços em branco detro da string
+
+
+
+Preenchendo strings
+padStart((total de caracter)20, " "(com o que vai preencher)) Preenche o inicio da string
+console.log(label_aluno.padStart(20, " ") + ": " + valor_aluno);
+//                Aluno: Edmilson
+
+padEnd(20, " ") Preenche o final da string
+console.log( label.padEnd(20, ' ') + email );
+// Email:              contato@email.com
+
+
+
+Substituindo partes de string
+texto.replace("PHP"(vai ser trocada), "JavaScript"(pelo o que vai trocar))
+let texto = "A linguagem PHP é muito poderosa";
+let resultado = texto.replace("PHP", "JavaScript");
+
+console.log(resultado); // A linguagem JavaScript é muito poderosa
+
+
+
+Retornando partes de string
+.substr(posição inicial  ,  quant de caracteres)
+let frase = "Estou aprendendo17() 1-(J) 2-(a) 3-(v) 4-(a) 5-(S) 6-(c) 7-(r) 8-(i) 
+9-(p) 10-(t) na DevMedia";
+
+let resultado = frase.substr(17, 10);
+
+console.log(resultado); // JavaScript
+
+
+
+.substring(posição inicial  ,posição final)
+let frase = "Ana é6-( )7-(e) 8-(s) 9-(p) 10-(e) 11-(c) 12-(i) alista em JavaScript";
+
+let substring_1 = frase.substring(6, 12);
+
+console.log(substring_1); // especi
+
+
+
+indexOf("string a ser buscada"(substring)) retorna a posição da substring dentro da string
+
+let frase = "Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado.";
+let posicao = frase.indexOf("sonho");
+
+console.log(posicao); // 14
+
+
+
+split(","caracter usado para separar a string) serpara a variável em substrings menores
+
+let cores_string = "vermelho,azul,branco,cinza,roxo";
+
+let cores_array = cores_string.split(",");
+
+console.log(cores_array); // (5) ["vermelho", "azul", "branco", "cinza", "roxo"]
+
