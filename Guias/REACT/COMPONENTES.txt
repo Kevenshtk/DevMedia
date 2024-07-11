@@ -1,0 +1,43 @@
+Dentro da pasta src criar a pasta componentes
+
+E dentro criar uma pasta com o nome componente
+
+Depois criar um arquivo .jsx (responsável por aquele componentes)
+
+
+CRIANDO COMPONETE - sempre colocar o nome com a primeira letra maiuscula
+Ex.:
+export default function nomeComponente(){
+    return(
+        
+    )
+}
+
+
+IMPORTANTO COMPONENTES
+
+import NomeComponente from "@(representa a pasta src)/componentes/card"(caminho);
+
+<NomeComponente/> : comando para usar o componentes
+
+
+ESTILIZANDO COMPONENTES - cada componente precisa ter o seu próprio arquivo module.css
+Ex.:
+
+import estilos from "./Card(sempre o nome do componete).module.css";
+
+
+COMPONENTES NATIVOS
+
+IMAGEM
+import Logo from '../../public(responsavel pelas imagens)/logo.png'(caminho imagem); : imagem
+import Image from 'next/image';
+
+<Image src={Logo(nomeImport)} alt=""/> : componente
+
+
+LINK
+import Link from 'next/link';
+
+<LinkclassName={estilos.link} href="https://www.youtube.com/">Youtube</Link> : componente
+
