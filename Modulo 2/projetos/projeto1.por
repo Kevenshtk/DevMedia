@@ -3,22 +3,22 @@ programa
 	
 	funcao inicio()
 	{
-		real valor, porcen_user, porcen, result_des, result_juro
-		
+		real valor, porcenUser, porcen, resultDes, resultJuro
+
 		escreva("Calculadora de juros e descontos\n\n")
-		
+
 		escreva("Informe o valor: ")
 		leia(valor)
 
-		escreva("\nInforme a porcentagem: ")
-		leia(porcen_user)
+		escreva("Informe a porcentagem: ")
+		leia(porcenUser)
 
-		porcen = valor * (porcen_user / 100)
-		result_des = valor - porcen
-		result_juro = valor + porcen
+		porcen = valor * (porcenUser / 100)
+		resultDes = valor - porcen
+		resultJuro = valor + porcen
 
-		escreva(valor+" com "+porcen_user+"% de desconto é "+result_des+"\n")
-		escreva(valor+" com "+porcen_user+"% de juros é "+result_juro+"\n\n")
+		escreva(valor+ " com "+porcenUser+"% de desconto fica "+resultDes+"\n")
+		escreva(valor+" com "+porcenUser+"% de juros fica "+resultJuro+"\n\n")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 65; 
+ * @POSICAO-CURSOR = 243; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

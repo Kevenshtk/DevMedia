@@ -2,7 +2,7 @@ programa
 {
 	funcao inicio ()
 	{
-	inteiro opt
+	inteiro opt = 0
 	real valor, result
 	
 	enquanto(opt != 3){
@@ -17,13 +17,13 @@ programa
 			leia(valor)
 			result = (valor * 9)/5 + 32
 			
-			escreva(valor+"C equivale a "+result)
+			escreva(valor+"C equivale a "+result+"\n")
 		} senao se (opt == 2){
 			escreva("\n\nInforme o valor que deseja converter: ")
 			leia(valor)
 			result = valor / 3.6
 			
-			escreva(valor+"km/h equivale a "+result+" m/s")
+			escreva(valor+"km/h equivale a "+result+" m/s\n")
 		}
 	}
 	
@@ -34,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 632; 
+ * @POSICAO-CURSOR = 449; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
