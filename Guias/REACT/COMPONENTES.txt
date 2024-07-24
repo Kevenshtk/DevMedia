@@ -39,5 +39,5 @@ import Image from 'next/image';
 LINK
 import Link from 'next/link';
 
-<LinkclassName={estilos.link} href="https://www.youtube.com/">Youtube</Link> : componente
+<Link className={estilos.link} href="https://www.youtube.com/">Youtube</Link> : componente
 
