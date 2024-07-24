@@ -1,0 +1,57 @@
+.secaoCapa{
+    height: 80vh;
+    background-image: url(../../../public/capa.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.containerTexto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 20px;
+    color: #fff;
+    font-family: 'Anybody', cursive;
+}
+
+.containerTexto p{
+    max-width: 500px;
+    font-size: 36px;
+    color: #C4C4C4;
+}
+
+.containerTexto h1{
+    max-width: 500px;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@media(max-width: 768px){
+    .secaoCapa{
+        height: 50vh;
+    }
+
+    .containerTexto h1{
+        font-size: 40px;
+        max-width: 350px;
+    }
+
+    .containerTexto p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .secaoCapa {
+      background-position: 89% center;
+    }
+    .secaoCapa .containerTexto {
+      background-color: rgba(0, 0, 0, 0.247);
+    }
+  }
