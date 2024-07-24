@@ -14,28 +14,28 @@ switch(mes_atual){
     case 0:
     case 1:
     case 2:
-        console.log("As chuvas de meteoros do primeiro trimestre são:\n\n"+meteoros_trimestre_um)
+        console.log("As chuvas de meteoros do primeiro trimestre são:\n\n"+meteoros_trimestre_um);
     break;
 
     case 3:
     case 4:
     case 5:
-        console.log("As chuvas de meteoros do segundo trimestre são:\n\n"+meteoros_trimestre_dois)
+        console.log("As chuvas de meteoros do segundo trimestre são:\n\n"+meteoros_trimestre_dois);
     break;
 
     case 6:
     case 7:
     case 8:
-        console.log("As chuvas de meteoros do terceiro trimestre são:\n\n"+meteoros_trimestre_tres)
+        console.log("As chuvas de meteoros do terceiro trimestre são:\n\n"+meteoros_trimestre_tres);
     break;
 
     case 9:
     case 10:
     case 11:
-        console.log("As chuvas de meteoros do quarto trimestre são:\n\n"+meteoros_trimestre_quatro)
-    break
+        console.log("As chuvas de meteoros do quarto trimestre são:\n\n"+meteoros_trimestre_quatro);
+    break;
 
     default:
-        console.log("Nenhuma chuva de meteoro no período informado")
-    break
+        console.log("Nenhuma chuva de meteoro no período informado");
+    break;
 }
