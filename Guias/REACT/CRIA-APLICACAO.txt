@@ -1,10 +1,3 @@
-Run as administrator: executar o npm como administrador
-
-npm cache clean --force: limpar Cache do npm
-
-npm install -g npm: npm install -g npm
-
-
 npx create-next-app: cria uma aplicação React
 O.B.S: executar o comando dentro da pasta do projeto
 
@@ -17,4 +10,3 @@ Would you like to customize the default import alias (@/*)? ... No(X) / Yes
 
 npm run dev: inicia um servidor local
 O.B.S: executar o comando dentro da pasta do projeto
-
