@@ -70,3 +70,12 @@ npm i typescript(nomePacote) -D
 Ex.: (dentro do arquivo)
 node_modules
 
+
+
+OUTROS COMANDOS
+
+Run as administrator: executar o npm como administrador
+
+npm cache clean --force: limpar Cache do npm
+
+npm install -g npm: Reinstalar npm
