@@ -37,9 +37,6 @@ VÁRIAVEIS EM CSS
  --nome na var: valor;
 }
 
-transition-duration: 0.5s; pra quando o mouse passar em cima
-
-transform: rotate(-45deg); pra rotacionar algo
 
 list-style-type: '\2714(nome I)\00A0(espaço)'; colocar icones na colunas
 
@@ -47,5 +44,8 @@ list-style-position: inside(o ícone faz parte do texto), outside; posição dos ic
 
 columns: 2; números de colunas
 
+
+transition-duration: 0.5s; pra quando o mouse passar em cima
+transform: rotate(-45deg); pra rotacionar algo
 transform: aplica uma transformação 2D ou 3D a um elemento
 translate(largula(x), altura(y)); munda a posição de um elemento 2D
