@@ -5,7 +5,7 @@ console.log('Aplicacao de Juros \n')
 let valor = entrada.question('Informe o valor devido: R$ ')
 
 if(valor != 0){
-    let dia_venc = entrada.question('Informe quantos dias se paddaram desde o vencimento do boleto: ')
+    let dia_venc = entrada.question('Informe quantos dias se passaram desde o vencimento do boleto: ')
     
     if(dia_venc >= 1){
         let taxa_j = 0
@@ -29,5 +29,5 @@ if(valor != 0){
     }
 
 } else {
-    console.log('O valor da divida dee ser maior que zero !')
+    console.log('O valor da divida deve ser maior que zero !')
 }

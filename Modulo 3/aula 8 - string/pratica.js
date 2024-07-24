@@ -36,7 +36,6 @@ for(let dados of chuvas_meteoros){
         case "Out":     pico_mes_nome = "Outubro";     break;
         case "Nov":     pico_mes_nome = "Novembro";     break;
         case "Dez":     pico_mes_nome = "Dezembro";     break;
-
         default:        pico_mes_nome = "Mês inválido";    break;
     }
 
