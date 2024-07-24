@@ -6,6 +6,8 @@ text-decoration(underline, none) texto sublinhado/ não sublinhado
 text-transform: uppercase; deixa todas as letras maíusculas
 font-variant: small-caps; deixa todas as letras maíusculas e as primeiras letras maiores
 line-height: em; é o espaço entre linha
+letter-spacing: 5px; é o espaço entre as letras
+
 
 Shorthand
 font(font-style-> font-weight-> font-size-> font-family(ordem))
