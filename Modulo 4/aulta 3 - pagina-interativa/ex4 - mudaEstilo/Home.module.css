@@ -1,0 +1,31 @@
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.449);
+    padding: 50px;
+}
+
+.bg_vermelho {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  
+  .bg_azul {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
