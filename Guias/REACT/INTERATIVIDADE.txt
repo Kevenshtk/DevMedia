@@ -1,0 +1,24 @@
+State Hook
+
+cria variáveis que atualizam a interface da aplicação "variáveis de estado"
+
+
+'use client' é usado sempre que for utilizado o evento onClick e useState
+
+import { useState } from "react"; para importar o State Hook
+
+
+const [nomeVar, set(prefixo)Mensagem(nomeVar) (função para atualizar o valor)] = useState('texto'(valor));
+
+
+function alterarMensagem(){
+    setMensagem("O React é um framework utilizado em aplicações web.");
+  }
+
+
+ALTERANDO ESTILO
+
+const [novoEstilo, setNovoEstilo] = useState(estilos.bg_vermelho); atribui o css para o elemento
+
+setNovoEstilo(estilos.bg_azul); muda o css do elemento
+
