@@ -12,12 +12,12 @@ function mudarImgProduto() {
 
             produto.classList.add('selecionado');
 
-            cardElement.innerHTML = `<img id="produto-g" src="img/img-produto/${idSelecionado}.png" alt="Imagem do produto">`;
+            cardElement.innerHTML = `<img id="produto-g" src="src/img/img-produto/${idSelecionado}.png" alt="Imagem do produto">`;
         });
 
         produto.addEventListener('mouseleave', () => {
 
-            cardElement.innerHTML = `<img id="produto-g" src="img/img-produto/${idSelecionado}.png" alt="Imagem do produto">`;
+            cardElement.innerHTML = `<img id="produto-g" src="src/img/img-produto/${idSelecionado}.png" alt="Imagem do produto">`;
 
         });
     });
