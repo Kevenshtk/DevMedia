@@ -4,6 +4,18 @@
     display: none;
 }
 
+.mobile .status {
+    font-size: 14px;
+    color: #000000a6;
+}
+
+.mobile .avaliacao {
+    color: #000000a6;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
 .mobile .status-avaliacao{
     width: 100%;
     display: flex;
