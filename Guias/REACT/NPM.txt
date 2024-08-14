@@ -80,4 +80,6 @@ npm cache clean --force: limpar Cache do npm
 
 npm install -g npm: Reinstalar npm
 
-npm install react-icons --save: instala uma biblioteca de icones
+npm install react-icons --save: para instalar uma biblioteca de ícones
+
+npm install -g sass: para instalar o SASS
