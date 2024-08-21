@@ -17,10 +17,7 @@ header {
 
 .topo-alto {
     .img-logo {
-        width: 150px;
-        background-image: url(../img/logo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
+        @include estilo-img-topo(150px, "../img/logo.png", contain);
     }
 
     .container-pesquisa {
@@ -37,7 +34,7 @@ header {
             box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.342);
         }
     
-        .container-icon{
+        .container-icon {
             width: 50px;
             height: 40px;
             display: flex;

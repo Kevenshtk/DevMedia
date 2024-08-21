@@ -3,6 +3,7 @@
 @import "secoes/secaoCaractProduto.scss";
 @import "secoes/secaoDescProduto.scss";
 @import "sidebar.scss";
+@import "mobile.scss";
 
 .secao-principal {
     width: 100%;
@@ -26,7 +27,7 @@
         font-weight: 600;
     }
 
-    .right {
+    .conteudo-principal {
         width: 65%;
     }
 

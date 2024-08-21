@@ -2,6 +2,7 @@
     width: 550px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .img-produto-p img {
         width: 50px;
@@ -16,8 +17,10 @@
         }
     }
 
-    .img-produto-g img {
-        width: 450px;
-        height: 450px;
+    .img-produto-g {
+        img {
+            width: 450px;
+            height: 450px;
+        }
     }
 }
