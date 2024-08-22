@@ -49,3 +49,4 @@ transition-duration: 0.5s; pra quando o mouse passar em cima
 transform: rotate(-45deg); pra rotacionar algo
 transform: aplica uma transformação 2D ou 3D a um elemento
 translate(largula(x), altura(y)); munda a posição de um elemento 2D
+filter: invert(1) brightness(2); efeito que altera a cor da imagem
