@@ -1,0 +1,44 @@
+<nomeCompotenente nome(nomeProps)={'Hamburguer'}(valor) preco={18} categoria={'Lanche'}(dados enviados)/>
+
+para enviar imagens
+import ImgProduto1 from '/public/hamburguer.jpg';
+
+<CardProduto imagem={ImgProduto1}/>
+
+
+Index do componente
+export default function nomeCompotenente(props(recebe os dados))
+
+<h3>{props.nome(nomeProps)}</h3>
+<p>R${props.preco}</p>
+<small>{props.categoria}</small>
+<Image src={props.imagem} alt={props.nome}/>
+
+
+FORMA DESESTRUTURAÇÃO
+
+export default function nomeCompotenente({imagem, nome, preco, categoria})
+
+<h3>{nome}</h3>
+<p>R${preco}</p>
+<small>{categoria}</small>
+<Image src={imagem} alt={nome}/>
+
+
+ENVIANDO TAGS
+
+<BoxMensagem>(componete que vai receber as tags)
+  <p>Lembra aquele produto que você estava procurando?</p>
+  <p>Ele abaixou o preço!! Corre que dá tempo de comprar.</p>
+  <a href="https://www.americanas.com.br/1818873801">
+  Ver produto
+  </a>
+</BoxMensagem>
+
+Index do componente
+export default function BoxMensagem(props)
+  <div>
+      <h2>Mesagem
+      <div>
+	{props.cheldren} // recebe as tags
+
