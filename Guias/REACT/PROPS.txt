@@ -40,5 +40,5 @@ export default function BoxMensagem(props)
   <div>
       <h2>Mesagem
       <div>
-	{props.cheldren} // recebe as tags
+	{props.children} // recebe as tags
 
