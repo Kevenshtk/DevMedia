@@ -1,0 +1,30 @@
+Configuração
+
+faz o git associar o nome e email aos commits
+git config --global user.name <name>
+git config –global user.email <email>
+
+
+
+git init - faz a pasta se tornar um repositório git
+Tem que ser feito com o terminal já na pasta do projeto
+
+git status - mostra o estado atual do repositório
+
+git add nomeFile - adiciona o arquivo no stage(local onde o git monitorar esses arquivos e suas alterações)
+git add . - adiciona todos os arquivos novos ou modificados a partir do diretório atual
+
+git rm --cached nomeFile - remover arquivos do index
+
+git commit -m "descricaoCommit"
+
+git branch - lista todas as branch do repositório
+git branch nomeBranch - cria uma nova branch
+
+git checkout nomeBranch - muda a branch para onde vai todas as mudanças
+git checkout master - volta para branch principal
+
+git diff - mostra todas as mudanças feitas no arquivo
+
+git log - mostra todos os commits do repositório
+git log nomeFile - mostra todos os commits do nomeFile
