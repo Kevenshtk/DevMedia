@@ -27,4 +27,6 @@ git checkout master - volta para branch principal
 git diff - mostra todas as mudanças feitas no arquivo
 
 git log - mostra todos os commits do repositório
-git log nomeFile - mostra todos os commits do nomeFile
+git log nomeFile - mostra todos os commits do arquivo nomeFile
+
+git clone caminho_para_o_repositório
