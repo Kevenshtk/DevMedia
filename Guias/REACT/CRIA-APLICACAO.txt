@@ -1,4 +1,4 @@
-npx create-next-app: cria uma aplicação React
+npx create-next-app - cria uma aplicação React
 O.B.S: executar o comando dentro da pasta do projeto
 
 Would you like to use TypeScript? ... No(X) / Yes
