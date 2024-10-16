@@ -15,6 +15,7 @@ export default function nomeCompotenente(props(recebe os dados))
 <Image src={props.imagem} alt={props.nome}/>
 
 
+
 FORMA DESESTRUTURAÇÃO
 
 export default function nomeCompotenente({imagem, nome, preco, categoria})
@@ -23,6 +24,7 @@ export default function nomeCompotenente({imagem, nome, preco, categoria})
 <p>R${preco}</p>
 <small>{categoria}</small>
 <Image src={imagem} alt={nome}/>
+
 
 
 ENVIANDO TAGS
