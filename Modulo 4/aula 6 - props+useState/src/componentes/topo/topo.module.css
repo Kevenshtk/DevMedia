@@ -1,0 +1,30 @@
+.topo{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+.topo h1{
+    font-size: 45px;
+}
+
+.topo p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.topo button{
+    font-size: 19px;
+    font-weight: 500;
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    background: none;
+    cursor: pointer;
+}

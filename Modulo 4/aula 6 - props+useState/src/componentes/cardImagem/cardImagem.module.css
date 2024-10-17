@@ -1,0 +1,10 @@
+.cardImage{
+    width: 500px;
+    height: 400px;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.699);
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
