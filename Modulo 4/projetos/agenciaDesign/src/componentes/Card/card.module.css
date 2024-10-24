@@ -1,0 +1,41 @@
+.cardLight, .cardDark{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 70px 30px;
+    border: 1px solid  #74727233;
+}
+
+.cardDark{
+    color: #CCCCCC;
+}
+
+.cardTopo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cardTopo span{
+    font-size: 16px;
+}
+
+.cardTopo h3{
+    font-size: 24px;
+}
+
+.cardTopo small{
+    font-size: 14px;
+}
+
+.cardDesc p{
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px){
+    .cardLight, .cardDark{
+        width: 100%;
+    }
+}

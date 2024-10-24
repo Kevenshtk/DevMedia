@@ -1,0 +1,66 @@
+.secaoExperienciaLight, .secaoExperienciaDark{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 20px;
+}
+
+.secaoExperienciaLight{
+    background-color: #f6f8fc;
+}
+
+.secaoExperienciaDark{
+    background-color: #393838;
+}
+
+.containerTituloLight, .containerTituloDark{
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.containerTituloLight h2, .containerTituloDark  h2{
+    font-size: 45px;
+}
+
+.containerTituloLight h2{
+    color: #32333c;
+}
+
+.containerTituloLight h2::after, .containerTituloDark h2::after{
+    content: '';
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #feb633;
+}
+
+.containerTituloDark  h2, .containerTituloDark p{
+    color: #CCCCCC;
+}
+
+.containerTituloLight p, .containerTituloDark p{
+    font-size: 18px;
+}
+
+.containerTituloLight p{
+    color: #8a8fa3;
+}
+
+.containerCards{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .containerCards{
+        flex-wrap: wrap;
+    }
+}

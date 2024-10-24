@@ -1,0 +1,58 @@
+A página será dividida em cinco componentes;
+
+Topo;
+SecaoBanner;
+SecaoExperienciaTrabalho;
+Card;
+Rodape.
+
+
+Topo:
+
+Um cabeçalho (<header>) com:
+Uma imagem (logo);
+Um botão (<button>).
+
+
+SecaoBanner:
+
+Uma seção (<section>) com:
+Um container (<div>) com:
+Uma imagem de fundo;
+Um container (<div>) com:
+Um parágrafo (<p>);
+Um subtítulo (<h2>);
+Um texto genérico (<span>).
+
+
+SecaoExperienciaTrabalho:
+
+Uma seção (<section>) com:
+Um container com:
+Um subtítulo (<h2>);
+Um parágrafo (<p>).
+Um container com:
+Três componentes Card.
+
+Card:
+
+Um container (<div>) com:
+Um subcontainer (<div>) com:
+Um texto genérico (<span>);
+Um subtítulo (<h3>);
+Um texto pequeno (<small>);
+Um subcontainer (<div>) com:
+Um parágrafo (<p>);
+
+
+Rodape:
+
+Um rodapé (<footer>) com:
+Um container (<div>);
+Um subcontainer (<div>) com:
+Uma imagem;
+Um parágrafo (<p>);
+Um subcontainer (<div>) com:
+Seis imagens;
+Um container (<div>) com:
+Um parágrafo;
