@@ -1,3 +1,0 @@
-META TAGS
- <meta name="robots" content="noindex, nofollow(não nos associa aos links da página)"/> impede a página de aparecer em resultados de busca
- <meta name="description" content="descrição"> faz uma descrição para o navegador
