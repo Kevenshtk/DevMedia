@@ -1,5 +1,13 @@
 # DevMedia
- Neste repositório estão todas as aulas/projetos do curso
+ Neste repositório estão todas as aulas e projetos desenvolvidos durante o curso
+
+Agência de design digital
+
+Sorveteria Artesanal
+
+Loja de óculos
+
+# Outros projetos
 
 <a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/projeto 3/index.html">Imobiliária Santos</a>
 
