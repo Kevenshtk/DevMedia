@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <section className={estilos.banner}>      
         <h1>SORVETE ARTESANAL</h1>
-        <Image src={banner} alt="Imagem banner"/>
+        <Image className={estilos.imgBanner} src={banner} alt="Imagem banner"/>
       </section>
 
       <section className={estilos.conteudo}>

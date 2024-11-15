@@ -69,6 +69,11 @@
         font-size: 65px;
     }
 
+    .imgBanner{
+        width: 400px;
+        object-fit: cover;
+    }
+
     .img, .conteudo .sabores, .conteudo .eventos div, .conteudo .sobre div{
         width: 100%;
     }
@@ -85,5 +90,9 @@
 @media (max-width: 375px){
     .banner h1{
         font-size: 55px;
+    }
+
+    .imgBanner{
+        width: 300px;
     }
 }
