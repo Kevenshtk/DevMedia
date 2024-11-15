@@ -22,7 +22,7 @@ if(diferencaTime > milissegundosDia){
 } else if(diferencaTime > milissegundosHora){
     msg+= "Voce esta ausente ha horas !!!"
 } else {
-    msg+= "Que bm que ainda esta aqui !"
+    msg+= "Que bom que ainda esta aqui !"
 }
 
 console.log(msg)
