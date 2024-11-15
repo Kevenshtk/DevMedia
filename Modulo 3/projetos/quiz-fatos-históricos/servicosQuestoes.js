@@ -18,8 +18,9 @@ function exibirQuestoes(questoes){
         let resposta = entradaDados.question("Ditige a resposta (ano): ");
 
         pontos = verificarResposta(resposta, pergunta.resposta, pontos);
+        
      });
-
+     
      return pontos;
 }
 
@@ -27,8 +28,10 @@ function verificarResposta(resposta, respostaCerta, pontos){
     if(resposta == respostaCerta){
         console.log("Resposta correta!");
         return pontos += 1;
+
     } else {
         console.log("Resposta errada!");
+        return pontos;
     }
 }
 
