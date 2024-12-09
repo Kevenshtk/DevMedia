@@ -9,7 +9,7 @@ Loja de óculos
 
 # Outros projetos
 
-<a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/projeto 3/index.html">Imobiliária Santos</a>
+<a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/projeto-3-imobiliaria-santos/index.html">Imobiliária Santos</a>
 
 <a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/projeto 4/index.html">Manhattan - Coffee House</a>
 
