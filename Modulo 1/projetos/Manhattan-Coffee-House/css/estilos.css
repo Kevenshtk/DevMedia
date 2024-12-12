@@ -49,7 +49,7 @@
 
 .container-banner {
   height: 100vh;
-  background-image: url("/img/parallax-imagem1.png");
+  background-image: url("../img/parallax-imagem1.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -66,7 +66,7 @@
 
 .container-parallax-1 {
   height: 50vh;
-  background-image: url("/img/parallax-imagem2.jpg");
+  background-image: url("../img/parallax-imagem2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -74,7 +74,7 @@
 
 .container-parallax-2 {
   height: 50vh;
-  background-image: url("/img/parallax-imagem3.jpg");
+  background-image: url("../img/parallax-imagem3.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -108,7 +108,7 @@
 
 .container-informacoes {
   height: 100vh;
-  background-image: url("/img/parallax-imagem4.png");
+  background-image: url("../img/parallax-imagem4.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -146,7 +146,7 @@
 
 .container-horarios {
   height: 85vh;
-  background-image: url("/img/cafeteria.jpg");
+  background-image: url("../img/cafeteria.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -221,33 +221,6 @@
   position: absolute;
   bottom: 80px;
   right: 50px;
-}
-
-@media (max-width: 600px) {
-  .topo img {
-    width: 75px;
-  }
-  .topo .menu a {
-    font-size: 15px;
-  }
-  .container-banner .titulo {
-    font-size: 55px;
-  }
-  .container-horarios .titulo {
-    text-align: center;
-  }
-  .rodape a {
-    bottom: 120px;
-    right: 30px;
-  }
-}
-@media (max-width: 380px) {
-  .topo img {
-    width: 65px;
-  }
-  .menu a {
-    font-size: 14px;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
