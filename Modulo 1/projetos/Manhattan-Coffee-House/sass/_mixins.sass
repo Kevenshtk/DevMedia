@@ -1,0 +1,12 @@
+@mixin styleContainerParallax($height, $url)
+    height: $height
+    background-image: url($url)
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+
+@mixin styleTituloDestaque($font, $font-style: none)
+    font-family: $font
+    font-style: $font-style
+
+    @extend %baseTituloDestaque

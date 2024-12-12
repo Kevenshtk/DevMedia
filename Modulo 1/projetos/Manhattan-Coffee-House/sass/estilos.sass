@@ -1,0 +1,187 @@
+@use  'variaveis'
+@use  'modelos'
+@use  'mixins'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+.topo
+    width: 100%
+    height: 75px
+    position: fixed
+    background-color: variaveis.$cor-principal
+    z-index: 1
+
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    img
+        width: 100px
+
+    .menu a
+        font-family: variaveis.$font-principal
+        font-weight: 700
+        text-decoration: none
+        font-size: 18px
+        color: variaveis.$cor-secundaria
+        text-shadow: 5px 5px 8px black
+        letter-spacing: 2px
+        margin: 0 5px
+    
+.container-banner
+    @include mixins.styleContainerParallax(100vh, '/img/parallax-imagem1.png')
+    @extend %baseCentralizarElemento
+
+    .titulo
+        width: 100%
+        max-width: 1024px
+        font-family: variaveis.$font-titulo
+        text-align: center
+        font-weight: 400
+        font-size: 100px
+        color: variaveis.$text-branco
+
+.container-parallax-1
+    @include mixins.styleContainerParallax(50vh, '/img/parallax-imagem2.jpg')
+
+.container-parallax-2
+    @include mixins.styleContainerParallax(50vh, '/img/parallax-imagem3.jpg')
+    
+.container-parallax-1, .container-parallax-2
+    @extend %baseCentralizarElemento
+
+    .titulo
+        @include mixins.styleTituloDestaque(variaveis.$font-titulo, italic)
+
+.container-texto
+    font-weight: 400
+    text-align: center
+    padding: 80px 0
+
+    @extend %baseCentralizarElemento
+
+    .titulo
+        font-family: variaveis.$font-principal
+        font-size: 24px
+        letter-spacing: 2px
+        color: variaveis.$cor-secundaria
+        margin-bottom: 30px
+
+    .texto
+        max-width: 1024px
+        font-family: variaveis.$font-text
+        line-height: 34px
+        letter-spacing: 1px
+        color: variaveis.$cor-text
+        padding: 0 20px
+
+.container-informacoes
+    @include mixins.styleContainerParallax(100vh, '/img/parallax-imagem4.png')
+
+    padding-top: 100px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    .titulo
+        @include mixins.styleTituloDestaque(variaveis.$font-principal)
+    
+    .endereco
+        width: 100%
+        
+        iframe
+            width: 100%
+            max-width: 1024px
+        
+    .contatos
+        width: 100%
+        max-width: 500px
+        background-color: variaveis.$cor-principal
+        padding: 10px
+        margin-bottom: 5px
+
+        p
+            font-family: variaveis.$font-principal
+            text-align: center
+            line-height: 36px
+            color: variaveis.$text-branco
+            text-shadow: 0 6px 8px black   
+
+.container-horarios
+    @include mixins.styleContainerParallax(85vh, '/img/cafeteria.jpg')
+    padding: 100px 20px
+
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+    .titulo
+        font-family: variaveis.$font-principal
+        letter-spacing: 8px
+        color: variaveis.$text-branco
+        margin-bottom: 30px
+
+    .tabela
+        width: 100%
+        max-width: 768px
+        font-family: variaveis.$font-principal
+        list-style: none
+
+        .info
+            margin-bottom: 15px
+            display: flex
+            align-items: center
+            gap: 10px
+
+            .dia-semana
+                color: variaveis.$text-branco
+                flex: 0 1 100px
+            
+            div
+                height: 1px
+                background-color: gray
+                flex: 1 1 auto
+            
+            .horario, .destaque
+                font-weight: 700
+                text-align: right
+                flex: 0 1 100px
+            
+            .horario
+                color: #ACACAC
+    
+            .destaque
+                color: variaveis.$cor-secundaria
+
+.rodape
+    font-family: variaveis.$font-text
+    text-align: center
+    font-weight: 600
+    line-height: 34px
+    letter-spacing: 2px
+    color: variaveis.$text-branco
+    background-color: black
+    padding: 20px 0
+    position: relative
+
+    span
+        color: variaveis.$cor-secundaria
+    
+    a
+        display: inline-block
+        width: 60px
+        height: 60px
+        background-image: url(../img/seta-para-cima.png)
+        background-position: center
+        background-size: cover
+        background-color: variaveis.$cor-secundaria
+        border-radius: 30px
+
+        position: absolute
+        bottom: 80px
+        right: 50px
