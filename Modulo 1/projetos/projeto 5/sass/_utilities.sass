@@ -1,0 +1,57 @@
+@use 'variables' as *
+
+@mixin reset
+    *
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+        font-family: $font
+
+@mixin containerAnuncio($bg-color)
+    background-color: $bg-color
+    color: $txt-white
+
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 40px 0
+
+    .text
+        width: 600px
+
+    @if $bg-color == $color-dark
+        @include btnAnuncio($primary-color)
+    @else 
+        @include btnAnuncio($color-dark)
+         
+@mixin btnAnuncio($bg-color)
+    .btn
+        width: 200px
+        height: 50px
+        text-decoration: none
+        background-color: $bg-color
+        border-radius: 5px
+        cursor: pointer
+        margin-left: 15px
+
+        display: flex
+        justify-content: space-around
+        align-items: center
+        transition: .6s
+
+        .fa-solid.fa-rocket
+            color: white
+
+        span
+            font-weight: 700
+            color: $txt-white
+    
+        &:hover
+            background-color: rgba(0, 0, 0, 0.068)
+            border: 1px solid $bg-color
+
+            .fa-solid.fa-rocket
+                color: $bg-color
+
+            span
+                color: $bg-color

@@ -1,0 +1,279 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.txt-emphasis {
+  color: #2f86d6;
+}
+
+.container-topo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-topo-logo {
+  display: flex;
+  flex-direction: row;
+}
+.container-topo img {
+  width: 70px;
+}
+.container-topo p {
+  color: #2f86d6;
+  font-weight: 600;
+}
+.container-topo-links {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.container-topo a {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #233032;
+  transition: 0.5s;
+}
+.container-topo a:hover {
+  color: #2f86d6;
+}
+
+.container-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2f86d6;
+  padding: 50px;
+}
+.container-banner-info {
+  max-width: 470px;
+  width: 100%;
+  color: #fff;
+}
+.container-banner-info p {
+  line-height: 26px;
+  word-spacing: 3px;
+}
+.container-banner-info h2 {
+  font-size: 28px;
+  line-height: 40px;
+  margin: 20px 0;
+}
+.container-banner-img {
+  width: 468px;
+}
+.container-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.anuncio-dark {
+  background-color: #233032;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+.anuncio-dark .text {
+  width: 600px;
+}
+.anuncio-dark .btn {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  background-color: #2f86d6;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+}
+.anuncio-dark .btn .fa-solid.fa-rocket {
+  color: white;
+}
+.anuncio-dark .btn span {
+  font-weight: 700;
+  color: #fff;
+}
+.anuncio-dark .btn:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+  border: 1px solid #2f86d6;
+}
+.anuncio-dark .btn:hover .fa-solid.fa-rocket {
+  color: #2f86d6;
+}
+.anuncio-dark .btn:hover span {
+  color: #2f86d6;
+}
+
+.anuncio-light {
+  background-color: #2f86d6;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+.anuncio-light .text {
+  width: 600px;
+}
+.anuncio-light .btn {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  background-color: #233032;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+}
+.anuncio-light .btn .fa-solid.fa-rocket {
+  color: white;
+}
+.anuncio-light .btn span {
+  font-weight: 700;
+  color: #fff;
+}
+.anuncio-light .btn:hover {
+  background-color: rgba(0, 0, 0, 0.068);
+  border: 1px solid #233032;
+}
+.anuncio-light .btn:hover .fa-solid.fa-rocket {
+  color: #233032;
+}
+.anuncio-light .btn:hover span {
+  color: #233032;
+}
+
+.container-info {
+  padding: 50px 0;
+  text-align: center;
+}
+.container-info h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+.container-info-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-info-cards .card {
+  width: 280px;
+}
+.container-info-cards .card img {
+  width: 100px;
+}
+.container-info-cards .card h3 {
+  margin: 20px 0;
+}
+
+/* Seção Planos */
+.secao-planos {
+  padding: 50px 0;
+  background-color: #f1f3f7;
+}
+
+.secao-planos h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+table {
+  width: 90%;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 0px 2px 40px 15px rgba(47, 133, 214, 0.418);
+}
+
+table thead th div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 280px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+table thead th h3 {
+  margin-bottom: 20px;
+}
+
+table thead th img {
+  width: 100px;
+}
+
+table thead th p {
+  width: 150px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #a89f9f;
+}
+
+table tbody td {
+  width: 250px;
+  max-width: 1024px;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.linha-impar {
+  background-color: #f6f6f6;
+}
+
+.linha-par {
+  background-color: #fff;
+}
+
+/* Rodapé */
+.rodape-logo {
+  width: 320px;
+  margin: 70px auto 40px;
+  display: flex;
+}
+
+.rodape-logo img {
+  width: 80px;
+}
+
+.rodape-logo p {
+  color: #2f86d6;
+  font-weight: 600;
+}
+
+.container-contatos {
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.container-copyright {
+  text-align: center;
+  font-weight: 600;
+  background-color: #f1f3f7;
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

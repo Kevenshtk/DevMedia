@@ -1,0 +1,191 @@
+@use 'variables' as *
+@use 'utilities' as *
+    
+@include reset
+
+.txt-emphasis
+    color: $primary-color
+
+.container-topo
+    width: 100%
+    height: 100px
+
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+
+    &-logo
+        display: flex
+        flex-direction: row
+    
+    img
+        width: 70px
+    
+    p
+        color: $primary-color
+        font-weight: 600
+
+    &-links
+        width: 400px
+        display: flex
+        justify-content: space-around
+    
+    a
+        font-weight: 500
+        font-size: 18px
+        text-decoration: none
+        color: $color-dark
+        transition: .5s
+
+        &:hover
+            color: $primary-color
+
+.container-banner
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+    background-color: $primary-color
+    padding: 50px
+
+    &-info
+        max-width: 470px
+        width: 100%
+        color: $txt-white
+
+        p
+            line-height: 26px
+            word-spacing: 3px
+
+        h2
+            font-size: 28px
+            line-height: 40px
+            margin: 20px 0
+
+    &-img
+        width: 468px
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.anuncio-dark
+    @include containerAnuncio($color-dark)
+
+.anuncio-light
+    @include containerAnuncio($primary-color)
+
+.container-info
+    padding: 50px 0
+    text-align: center
+
+    h2
+        text-align: center
+        font-size: 32px
+        margin-bottom: 70px
+    
+    &-cards
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 10px
+
+        .card
+            width: 280px
+
+            img
+                width: 100px
+            
+            h3
+                margin: 20px 0
+
+
+
+/* Seção Planos */
+.secao-planos
+    padding: 50px 0
+    background-color: #f1f3f7
+
+.secao-planos h2
+    text-align: center
+    font-size: 32px
+    margin-bottom: 70px
+
+
+
+table
+    width: 90%
+    border-radius: 5px
+    margin: auto
+    box-shadow: 0px 2px 40px 15px rgba(47, 133, 214, 0.418)
+
+
+table thead th div
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+
+    height: 280px
+    padding: 20px 0
+    background-color: #fff
+
+table thead th h3
+    margin-bottom:  20px
+
+table thead th img
+    width: 100px
+
+table thead th p
+    width: 150px
+    font-size: 13px
+    font-weight: 500
+    color: #a89f9f
+
+table tbody td
+    width: 250px
+    max-width: 1024px
+    text-align: center
+    font-weight: 500
+    padding: 20px
+
+.linha-impar
+    background-color: #f6f6f6
+
+.linha-par
+    background-color: #fff
+
+
+
+
+
+
+
+    
+/* Rodapé */
+.rodape-logo
+    width: 320px
+    margin: 70px auto 40px
+    display: flex
+
+.rodape-logo img
+    width: 80px
+
+.rodape-logo p
+    color: #2f86d6
+    font-weight: 600
+
+.container-contatos
+    text-align: center
+    line-height: 40px
+    font-weight: 600
+    margin-bottom: 50px
+
+.container-copyright
+    text-align: center
+    font-weight: 600
+    background-color: #f1f3f7
+    padding: 10px 0
