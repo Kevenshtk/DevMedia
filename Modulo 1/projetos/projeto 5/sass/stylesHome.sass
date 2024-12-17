@@ -6,6 +6,14 @@
 .txt-emphasis
     color: $primary-color
 
+.title-container
+    text-align: center
+    font-size: 32px
+    margin-bottom: 70px
+
+    @include mobile
+        font-size: 19px
+
 .container-topo
     width: 100%
     height: 100px
@@ -16,15 +24,7 @@
     flex-wrap: wrap
 
     &-logo
-        display: flex
-        flex-direction: row
-    
-    img
-        width: 70px
-    
-    p
-        color: $primary-color
-        font-weight: 600
+        @extend  %base-logo
 
     &-links
         width: 400px
@@ -38,6 +38,9 @@
         color: $color-dark
         transition: .5s
 
+        @include mobile
+            font-size: 14px
+
         &:hover
             color: $primary-color
 
@@ -46,9 +49,12 @@
     display: flex
     flex-direction: row
     justify-content: center
-    flex-wrap: wrap
     background-color: $primary-color
     padding: 50px
+
+    @include mobile
+            flex-wrap: wrap
+            text-align: center
 
     &-info
         max-width: 470px
@@ -81,11 +87,6 @@
 .container-info
     padding: 50px 0
     text-align: center
-
-    h2
-        text-align: center
-        font-size: 32px
-        margin-bottom: 70px
     
     &-cards
         display: flex
@@ -102,90 +103,79 @@
             h3
                 margin: 20px 0
 
-
-
-/* Seção Planos */
-.secao-planos
+.container-planos
+    background-color: $bg-mid-light
     padding: 50px 0
-    background-color: #f1f3f7
 
-.secao-planos h2
-    text-align: center
-    font-size: 32px
-    margin-bottom: 70px
+    .tabela
+        @include mobile
+            width: 100%
+            overflow-x: auto
 
+    table
+        width: 90%
+        border-radius: 5px
+        margin: auto
+        box-shadow: 0px 2px 40px 15px rgba(47, 133, 214, 0.418)
 
+        thead th 
+            div
+                height: 280px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                padding: 20px 0
+                background-color: #fff
 
-table
-    width: 90%
-    border-radius: 5px
-    margin: auto
-    box-shadow: 0px 2px 40px 15px rgba(47, 133, 214, 0.418)
+                h3
+                    margin-bottom:  20px
 
+                    @include mobile
+                        font-size: 14px
 
-table thead th div
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: center
+                img
+                    width: 100px
 
-    height: 280px
-    padding: 20px 0
-    background-color: #fff
+                p
+                    width: 150px
+                    font-size: 13px
+                    font-weight: 500
+                    color: $txt-gray
+            
+        tbody 
+            td
+                width: 250px
+                max-width: 1024px
+                text-align: center
+                font-weight: 500
+                padding: 20px
 
-table thead th h3
-    margin-bottom:  20px
+                @include mobile
+                    font-size: 14px
 
-table thead th img
-    width: 100px
+            .linha-impar
+                background-color: #f6f6f6
 
-table thead th p
-    width: 150px
-    font-size: 13px
-    font-weight: 500
-    color: #a89f9f
-
-table tbody td
-    width: 250px
-    max-width: 1024px
-    text-align: center
-    font-weight: 500
-    padding: 20px
-
-.linha-impar
-    background-color: #f6f6f6
-
-.linha-par
-    background-color: #fff
-
-
-
-
-
-
-
+            .linha-par
+                background-color: #fff
     
-/* Rodapé */
-.rodape-logo
-    width: 320px
-    margin: 70px auto 40px
-    display: flex
+.container-rodape
+    &-logo
+        @extend  %base-logo
+        margin: 70px auto 40px
 
-.rodape-logo img
-    width: 80px
+    &-contatos
+        text-align: center
+        font-weight: 600
+        line-height: 40px
+        margin-bottom: 50px
 
-.rodape-logo p
-    color: #2f86d6
-    font-weight: 600
+    &-copyright
+        text-align: center
+        background-color: $bg-mid-light
+        padding: 5px 0
 
-.container-contatos
-    text-align: center
-    line-height: 40px
-    font-weight: 600
-    margin-bottom: 50px
-
-.container-copyright
-    text-align: center
-    font-weight: 600
-    background-color: #f1f3f7
-    padding: 10px 0
+    &-contatos, &-copyright
+        @include mobile
+            font-size: 14px
