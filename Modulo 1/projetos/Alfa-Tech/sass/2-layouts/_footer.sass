@@ -1,0 +1,25 @@
+@use '../1-base/variables' as *
+@use '../utilities' as *
+
+.container-rodape
+    display: flex
+    flex-direction: column
+
+    &-logo
+        margin: 70px auto 40px
+
+    &-info
+        font-weight: 600
+        line-height: 40px
+        margin-bottom: 50px
+
+    &-copyright
+        width: 100%
+        background-color: $bg-mid-light
+        padding: 5px 0
+
+    &-info, &-copyright
+        text-align: center
+
+        @include mobile
+            font-size: 14px

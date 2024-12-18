@@ -1,0 +1,26 @@
+@use '../1-base/variables' as *
+@use '../utilities' as *
+
+.anuncio-light, .anuncio-dark
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 40px 0
+
+    .text
+        width: 600px
+
+        @include mobile
+                max-width: 250px
+
+                h2
+                    font-size: 18px
+
+                p
+                    font-size: 12px
+
+.anuncio-dark
+    @include colorContainerAnuncio($color-dark)
+
+.anuncio-light
+    @include colorContainerAnuncio($primary-color)

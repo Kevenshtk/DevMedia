@@ -1,0 +1,19 @@
+@use '../1-base/variables' as *
+@use '../utilities' as *
+
+.container-topo-links
+    width: 400px
+    display: flex
+    justify-content: space-around
+    
+    a
+        font-weight: 500
+        font-size: 18px
+        color: $color-dark
+        transition: .5s
+
+        @include mobile
+            font-size: 14px
+
+        &:hover
+            color: $primary-color

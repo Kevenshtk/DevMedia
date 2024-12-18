@@ -5,36 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlfaTech</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icon -->
     <link rel="shortcut icon" href="img/logo-icone.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/preco.css">
-    <link rel="stylesheet" href="css/responsive-home.css">
-    <link rel="stylesheet" href="css/responsive-preco.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="topo"><!-- Topo da página-->
-        <div class="container-topo limitar-secao">
-            <div class="topo-logo">
-                <img src="img/logo-icone-escuro.png">
-                <div>
-                    <h1>AlfaTech</h1>
-                    <p>Soluções em hospedagem</p>
-                </div>
+    <header class="container-topo bg-primary-color">
+        <div class="container-topo-logo">
+            <img src="img/logo-icone-escuro.png">
+            <div>
+                <h1>AlfaTech</h1>
+                <p>Soluções em hospedagem</p>
             </div>
-                <nav class="topo-links">
-                    <a href="home.html">HOME</a>
-                    <a href="home.html #info">INFORMAÇÕES</a>
-                    <a href="home.html #planos">PLANOS</a>
-                    <a href="home.html #contatos">CONTATO</a>
-                </nav>
         </div>
-    </div>
+        <nav class="container-topo-links">
+            <a href="home.html">Home</a>
+            <a href="home.html#info">Informações</a>
+            <a href="home.html#planos">Planos</a>
+            <a href="home.html#contato">Contato</a>
+        </nav>
+    </header>
 
-    <div class="conteudo-principal"><!-- Seção conteúdo principal da página-->
-        <table>
+    <main class="container-table">
+        <table class="tabela">
             <thead>
                 <tr>
                     <th class="celula-escondida"></th>
@@ -182,20 +180,22 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    </main>
 
-    <div class="rodape"><!-- Rodapé da página -->
-        <div class="rodape-logo">
+    <footer class="container-rodape bg-primary-color">
+        <div class="container-rodape-logo">
             <img src="img/logo-icone-escuro.png">
             <div>
                 <h1>AlfaTech</h1>
                 <p>Soluções em hospedagem</p>
             </div>
         </div>
-        <p class="paragrafo-rodape">&copy; AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
-        <div class="container-copyright">
-            <p>Desenvolvido por <span>"Keven"</span></p>
+
+        <p class="container-rodape-info">&copy; AlfaTech - Soluções em hospedagem - Todos os direitos reservados</p>
+        
+        <div class="container-rodape-copyright">
+            <p>Desenvolvido por <span class="txt-emphasis">"Keven"</span></p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,34 @@
+@use '../1-base/variables' as *
+@use '../utilities' as *
+
+.btn
+        width: 200px
+        height: 50px
+        border-radius: 5px
+        cursor: pointer
+        margin-left: 15px
+
+        display: flex
+        justify-content: space-around
+        align-items: center
+        transition: .6s
+
+        @include mobile
+            width: 150px
+
+            span
+                font-size: 12px
+                text-align: center
+
+        .fa-solid.fa-rocket
+            color: white
+
+            @include mobile
+                display: none
+
+        span
+            font-weight: 700
+            color: $txt-white
+    
+        &:hover
+            background-color: rgba(0, 0, 0, 0.068)

@@ -1,0 +1,25 @@
+@use 'variables' as *
+@use '../utilities' as *
+
+*
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+        font-family: $font
+
+a
+    text-decoration: none
+
+ul
+    list-style: none
+
+.txt-emphasis
+    color: $primary-color
+
+.title-container
+    text-align: center
+    font-size: 32px
+    margin-bottom: 70px
+
+    @include mobile
+        font-size: 19px
