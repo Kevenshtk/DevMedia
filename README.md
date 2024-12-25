@@ -13,7 +13,7 @@ Loja de óculos
 
 <a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/Manhattan-Coffee-House/index.html">Manhattan - Coffee House</a>
 
-<a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/projeto 5/home.html">AlfaTech</a>
+<a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/Alfa-Tech/home.html">AlfaTech</a>
 
 <a href="https://kevenshtk.github.io/DevMedia/Modulo 1/projetos/projeto 6/index.html">Pousada Secreta</a>
 
