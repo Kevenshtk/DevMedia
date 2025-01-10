@@ -1,0 +1,16 @@
+(x) 1 - A aplicação deve ser iniciada mostrando os pratos da categoria "entrada".
+
+(x) 2 - A aplicação deve carregar pratos do restaurante com imagem, nome, categoria, descrição e preço.
+
+(x) 3 - Os dados da aplicação devem ser estáticos e armazenados localmente.
+
+(x) 4 - A aplicação deve permitir ao usuário filtrar os pratos através dos botões de categoria.
+
+(x) 5 - Sempre que um botão for clicado, ele deve "acender", ou seja, ele deve mudar de cor como indicação de que foi clicado pelo usuário.
+
+(x) 6 - A aplicação deve permitir a busca por pratos quando um usuário digitar o nome ou a descrição de um prato no campo de busca.
+
+(x) 7 - A busca deve ocorrer a partir do 3° caractere digitado, deve aceitar textos parciais e também deve ignorar letras minúsculas ou maiúsculas no resultado.
+
+(x) 8 - Quando um texto digitado no campo de busca for totalmente apagado, a lista exibida na tela não precisa ser atualizada. Isso acontecerá apenas se o usuário clicar em alguma categoria ou se realizar uma nova busca.
+

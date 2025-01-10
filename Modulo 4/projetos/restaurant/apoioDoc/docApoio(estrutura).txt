@@ -1,0 +1,51 @@
+O site será uma página única, dividida em 4 componentes:
+
+Home;
+Categorias;
+CampoDeBusca;
+Cards.
+
+
+Topo:
+
+Um cabeçalho ( <header>) com:
+Uma imagem (banner);
+Um container com:
+Um título (<h1>);
+Um parágrafo (<p>);
+
+Um container principal (<main>) com:
+
+O componente Categorias;
+O componente CampoDeBusca;
+Uma seção (<section>) com:
+Um subtítulo;
+Um container (<div>) que recebe o componente Cards;
+
+
+Categorias:
+
+Uma seção (<section>) com:
+Seis botões (<button>), cada um com:
+Uma imagem;
+Um texto (<span>);
+
+
+CampoDeBusca:
+
+Um container (<div>) com:
+Uma imagem;
+Um campo de busca (<input>);
+
+
+Card:
+
+Um container (<div>) com:
+Uma tag <figure> com uma imagem;
+Um subcontainer (<div>) com:
+Um subcontainer (<div>) com:
+Um subtítulo (<h3>);
+Um texto (<small>);
+Um parágrafo (<p>);
+Um subcontainer (<div>) com:
+Um texto (<span>).
