@@ -2,7 +2,7 @@
 
 - ## Restaurant
     - ### imagem do projeto:
-    ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/agenciaDesign/public/telaRestaurant.png)
+    ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/restaurant/public/telaRestaurant.png)
     - ### tecnologias usadas: 
         <img align="center" src="https://skillicons.dev/icons?i=html,css,react" alt="icons"/>
     - ### link do repositório: [Restaurant](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/restaurant)
