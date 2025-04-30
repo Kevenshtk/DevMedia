@@ -4,7 +4,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/restaurant/public/telaRestaurant.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=react,sass" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=nextjs,sass" alt="icons"/>
     - ### link do repositório: [Restaurant](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/restaurant)
 
 
@@ -13,7 +13,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/agenciaDesign/public/telaAgenciaDeDesign.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=react,css" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=nextjs,css" alt="icons"/>
     - ### link do repositório: [Agência de design digital](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/agenciaDesign)
 
 
@@ -22,7 +22,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/sorveteria/public/telaSoveteria.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=react,css" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=nextjs,css" alt="icons"/>
     - ### link do repositório: [Sorveteria Artesanal](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/sorveteria)
 
 
@@ -31,7 +31,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/oticasVida/public/telaOticasVida.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=react,css" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=nextjs,styledcomponents" alt="icons"/>
     - ### link do repositório: [Óticas Vida](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/oticasVida)
 
 
