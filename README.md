@@ -13,7 +13,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/agenciaDesign/public/telaAgenciaDeDesign.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=nextjs,styledcomponents" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=nextjs,styledcomponents,ts" alt="icons"/>
     - ### link do repositório: [Agência de design digital](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/agenciaDesign)
 
 
