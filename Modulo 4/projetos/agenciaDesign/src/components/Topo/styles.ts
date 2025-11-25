@@ -2,7 +2,9 @@ import styled, { css } from "styled-components";
 import Image from "next/image";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
-export const Container = styled.header`
+import { ThemesStyleType } from "@/types/themes";
+
+export const Container = styled.header<ThemesStyleType>`
   width: 100%;
   height: 8vh;
   display: flex;
@@ -13,7 +15,7 @@ export const Container = styled.header`
   background-color: ${(themes) => (themes.dark ? "#252525" : "#fff")};
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<ThemesStyleType>`
   width: 35px;
   height: 35px;
   position: relative;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { ThemesStyleType } from "@/types/themes";
 
-export const Container = styled.footer`
+export const Container = styled.footer<ThemesStyleType>`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,7 +47,7 @@ export const Icon = styled(Image)`
   height: 45px;
 `;
 
-export const ContainerCopyright = styled.div`
+export const ContainerCopyright = styled.div<ThemesStyleType>`
   width: 100%;
   text-align: center;
   padding: 20px 0;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+import { ThemesStyleType } from "@/types/themes";
+
+export const Container = styled.section<ThemesStyleType>`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@ export const Container = styled.section`
   background-color: ${(themes) => (themes.dark ? "#393838" : "#f6f8fc")};
 `;
 
-export const ContainerTitle = styled.div`
+export const ContainerTitle = styled.div<ThemesStyleType>`
   max-width: 768px;
   width: 100%;
   display: flex;

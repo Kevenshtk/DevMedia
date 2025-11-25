@@ -1,4 +1,4 @@
-import { Container, ContainerImg, ContainerInfo } from "./SectionBanner";
+import { Container, ContainerImg, ContainerInfo } from "./styles";
 
 export default function SecaoBanner() {
   return (

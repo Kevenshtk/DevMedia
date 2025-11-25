@@ -45,6 +45,9 @@ export const ContainerInfo = styled.div`
   }
 
   @media (max-width: 768px) {
+  h2, span{
+    font-size: 2.5rem
+  }
     .containerInfo {
       width: 100%;
     }

@@ -1,4 +1,6 @@
-import { Container, ContainerTitle, ContainerCards } from "./SectionExperience";
+import { useContext } from "react";
+import { ThemesContext } from "@/contexts/themes";
+import { Container, ContainerTitle, ContainerCards } from "./styles";
 import Card from "@/components/Card";
 
 const experience = [
@@ -25,10 +27,12 @@ const experience = [
   },
 ];
 
-export default function SecaoExperiencia(props) {
+export default function SecaoExperiencia() {
+  const { temaEscuro } = useContext(ThemesContext);
+
   return (
-    <Container dark={props.temaEscuro}>
-      <ContainerTitle dark={props.temaEscuro}>
+    <Container dark={temaEscuro}>
+      <ContainerTitle dark={temaEscuro}>
         <h2>Experiências De Trabalho</h2>
         <p>
           Há mais de 10 anos no mercado de Branding, Desing Gráfico, Criação de
@@ -40,14 +44,13 @@ export default function SecaoExperiencia(props) {
         {experience.map((item, index) => (
           <Card
             key={index}
-            temaEscuro={props.temaEscuro}
+            temaEscuro={temaEscuro}
             data={item.data}
             titulo={item.titulo}
             empresa={item.empresa}
             descricao={item.descricao}
           />
         ))}
-        ;
       </ContainerCards>
     </Container>
   );

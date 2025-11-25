@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ThemesContext } from "@/contexts/themes";
 import {
   Container,
   ContainerInfo,
@@ -5,7 +7,7 @@ import {
   ListIcons,
   Icon,
   ContainerCopyright,
-} from "./Footer";
+} from "./styles";
 import Image from "next/image";
 import Logo from "@/../public/logo.png";
 import Facebook from "@/../public/facebook.png";
@@ -42,9 +44,11 @@ const iconsSocial = [
   },
 ];
 
-export default function Rodape(props) {
+export default function Rodape() {
+  const { temaEscuro } = useContext(ThemesContext);
+
   return (
-    <Container dark={props.temaEscuro}>
+    <Container dark={temaEscuro}>
       <ContainerInfo>
         <Image src={Logo} alt="Logo" />
         <p>
@@ -62,7 +66,7 @@ export default function Rodape(props) {
           ))}
         </ListIcons>
       </ContainerSocial>
-      <ContainerCopyright dark={props.temaEscuro}>
+      <ContainerCopyright dark={temaEscuro}>
         <p>
           Copyright 2024 desenvolvido por <span>Keven</span>
         </p>
