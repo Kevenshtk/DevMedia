@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body>
-        <Topo/>
+        <Topo />
         {children}
-        <Rodape/>
+        <Rodape />
       </body>
     </html>
   );

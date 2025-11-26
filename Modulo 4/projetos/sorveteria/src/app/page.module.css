@@ -1,98 +1,104 @@
-.banner{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-color: #F9DB79;
+  background-color: #f9db79;
 }
 
-.banner h1{
-    font-size: 100px;
-    text-align: center;
-    color: #fff;
-    text-shadow: 3px 5px 2px #474747;
+.banner h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 5px 2px #474747;
 
-    position: absolute;
+  position: absolute;
 }
 
-.conteudo{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.conteudo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.img{
-    width: 50%;
-    height: auto;
+.img {
+  width: 50%;
+  height: auto;
 }
 
-.conteudo .sabores, .conteudo .eventos div, .conteudo .sobre div{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.conteudo .sabores,
+.conteudo .eventos div,
+.conteudo .sobre div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-    text-align: center;
-    padding: 100px 50px;
+  text-align: center;
+  padding: 100px 50px;
 }
 
-.conteudo .sobre, .conteudo .eventos{
-    width: 100%;
-    display: flex;
-    align-items: center;
+.conteudo .sobre,
+.conteudo .eventos {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.conteudo div h2{
-    font-size: 36px;
+.conteudo div h2 {
+  font-size: 36px;
 }
 
-.conteudo div span{
-    font-size: 20px;
-    font-weight: 600;
-    font-style: italic;
+.conteudo div span {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
 }
 
-.conteudo div p{
-    font-size: 16px;    
+.conteudo div p {
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
-    .banner{
-        height: 80vh;
-    }
+  .banner {
+    height: 80vh;
+  }
 
-    .banner h1{
-        font-size: 65px;
-    }
+  .banner h1 {
+    font-size: 65px;
+  }
 
-    .imgBanner{
-        width: 400px;
-        object-fit: cover;
-    }
+  .imgBanner {
+    width: 400px;
+    object-fit: cover;
+  }
 
-    .img, .conteudo .sabores, .conteudo .eventos div, .conteudo .sobre div{
-        width: 100%;
-    }
+  .img,
+  .conteudo .sabores,
+  .conteudo .eventos div,
+  .conteudo .sobre div {
+    width: 100%;
+  }
 
-    .conteudo .eventos{
-        flex-direction: column-reverse;
-    }
+  .conteudo .eventos {
+    flex-direction: column-reverse;
+  }
 
-    .conteudo .sobre{
-        flex-direction: column;
-    }
+  .conteudo .sobre {
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 375px){
-    .banner h1{
-        font-size: 55px;
-    }
+@media (max-width: 375px) {
+  .banner h1 {
+    font-size: 55px;
+  }
 
-    .imgBanner{
-        width: 300px;
-    }
+  .imgBanner {
+    width: 300px;
+  }
 }

@@ -1,85 +1,88 @@
-.banner{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    background-image: url(../../../public/banner-sobre.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../../../public/banner-sobre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.banner h1{
-    font-size: 100px;
-    color: #fff;
-    text-shadow: 3px 5px 2px #474747;
-    text-align: center;
+.banner h1 {
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 3px 5px 2px #474747;
+  text-align: center;
 }
 
-.secaoSobre{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.secaoSobre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.conteudo{
-    width: 100%;
-    max-width: 1024px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    gap: 30px;
+.conteudo {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 30px;
 
-    text-align: center;
-    padding: 100px 20px;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.conteudo h3{
-    font-size: 32px;
+.conteudo h3 {
+  font-size: 32px;
 }
 
-.conteudo span{
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
+.conteudo span {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.conteudo p{
-    font-size: 16px;
+.conteudo p {
+  font-size: 16px;
 }
 
-.secaoImagens{
-    width: 100%;
-    display: flex;
+.secaoImagens {
+  max-width: 100%;
+  display: flex;
 }
 
-.secaoImagens .img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.secaoImagens .img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
-    .banner{
-        height: 80vh;
-    }
+  .banner {
+    height: 80vh;
+  }
 
-    .banner h1{
-        font-size: 65px;
-    }
+  .banner h1 {
+    font-size: 65px;
+  }
 
-    .secaoImagens{
-        flex-direction: column;
-    }
+  .secaoImagens {
+    flex-direction: column;
+  }
 
+  .secaoImagens .img {
+    width: 100%;
+  }
 }
 
-@media (max-width: 375px){
-    .banner h1{
-        font-size: 55px;
-    }
+@media (max-width: 375px) {
+  .banner h1 {
+    font-size: 55px;
+  }
 }
