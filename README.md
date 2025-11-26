@@ -22,7 +22,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%204/projetos/sorveteria/public/telaSoveteria.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=nextjs,css" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=nextjs,css,ts" alt="icons"/>
     - ### link do repositório: [Sorveteria Artesanal](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%204/projetos/sorveteria)
 
 
