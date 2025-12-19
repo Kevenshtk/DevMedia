@@ -71,7 +71,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%201/projetos/Pousada-Secreta/assets/telaPousadaSecreta.png)
     - ### tecnologias usadas: 
-        <img src="https://skillicons.dev/icons?i=html,css" alt="icons"/>
+        <img src="https://skillicons.dev/icons?i=html,tailwind" alt="icons"/>
     - ### link do repositório: [Pousada Secreta](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%201/projetos/Pousada-Secreta)
     - ### deploy: [Pousada Secreta](https://kevenshtk.github.io/DevMedia/Modulo%201/projetos/Pousada-Secreta/index.html)
 
