@@ -1,142 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pousada Secreta</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
 </head>
-<body>
-    <header class="topo">
-        <div class="limitar-area container">
-            <a class="link-logo" href="index.html">Pousada <span>Secreta</span></a>
 
-            <nav class="link-topo">
-                <a  href="#sobre">Sobre</a>
-                <a  href="#rota">Rota</a>
-                <a  href="quartos.html">Quartos</a>
+<body class="m-0 p-0 font-SourceSansPro box-border">
+    <header class="w-full h-[60px] bg-white fixed flex justify-around items-center border-b border-gray-300">
+        <div class="w-full max-w-[1024px] h-[30px] flex justify-between items-center">
+            <a class="text-2xl text-[#3d3d3d] no-underline" href="index.html">Pousada <span
+                    class="text-[#6592c9]">Secreta</span></a>
+
+            <nav class="h-full text-lg no-underline uppercase flex space-x-4">
+                <a class="no-underline text-[#3d3d3d] px-2 transition-all duration-50 hover:border-b-4 border-[#6592c9]"
+                    href="#sobre">Sobre</a>
+                <a class="no-underline text-[#3d3d3d] px-2 transition-all duration-50 hover:border-b-4 border-[#6592c9]"
+                    href="#rota">Rota</a>
+                <a class="no-underline text-[#3d3d3d] px-2 transition-all duration-50 hover:border-b-4 border-[#6592c9]"
+                    href="quartos.html">Quartos</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="banner">
-            <div class="titulo">
-                <h1>Pousada Secreta</h1>
-                <p>A pousada reservada em Angra do Reis</p>
-            </div>
-        </section>
+    <section class="h-screen flex justify-center items-center bg-banner bg-no-repeat bg-cover">
+        <div class="text-3xl text-white p-6 text-center bg-[#0a9077b3] border rounded-lg">
+            <h1 class="text-[2em] my-9 font-bold">Pousada Secreta</h1>
+            <p class="my-6">A pousada reservada em Angra do Reis</p>
+        </div>
+    </section>
 
-        <section class="limitar-area secao-container">
-            <h2>SEJA BEM-VINDO(A)!</h2>
+    <main class="w-full flex flex-col justify-center items-center">
+        <section class="text-center text-gray-600 pt-10 mb-10 leading-loose">
+            <h2 class="text-4xl mb-6">SEJA BEM-VINDO(A)!</h2>
             <p>Relaxe em nossas acomodações e curta a melhor de Angra dos Reis.</p>
             <p>Temos quartos para solteiro, casal ou família.</p>
         </section>
 
-        <section class="limitar-area quartos" id="quartos">
-            <div class="quarto">
+        <section class="max-w-[1024px] flex space-x-8 grow" id="quartos">
+            <div class="text-center border-b-2 border-[#0a9077b3]">
                 <img src="assets/quarto-solteiro1.jpg" alt="Quarto de Solteiro" title="Quarto de solteiro">
-                <a href="quartos.html#solteiro"><p>Quarto de Solteiro</p></a>
+                <a class="text-gray-600 text-lg" href="quartos.html#solteiro">
+                    <p class="py-4">Quarto de Solteiro</p>
+                </a>
             </div>
 
-            <div class="quarto">
+            <div class="text-center border-b-2 border-[#0a9077b3]">
                 <img src="assets/quarto-casal1.jpg" alt="Quarto de Casal" title="Quarto de casal">
-                <a href="quartos.html#casal"><p>Quarto de Casal</p></a>
+                <a class="text-gray-600 text-lg" href="quartos.html#casal">
+                    <p class="py-4">Quarto de Casal</p>
+                </a>
             </div>
 
-            <div class="quarto">
+            <div class="text-center border-b-2 border-[#0a9077b3]">
                 <img src="assets/quarto-familia1.jpg" alt="Quarto Família" title="Quarto família">
-                <a href="quartos.html#familia"><p>Quarto Família</p></a>
+                <a class="text-gray-600 text-lg" href="quartos.html#familia">
+                    <p class="py-4">Quarto Família</p>
+                </a>
             </div>
         </section>
 
-        <section class="limitar-area secao-container" id="rota">
-            <h2>ROTA</h2>
+        <section class="max-w-[1024px] text-center text-gray-600 pt-10 mb-10 leading-loose" id="rota">
+            <h2 class="text-4xl mb-6">ROTA</h2>
             <p>Veja como chegar até a pousada.</p>
         </section>
-        
-        <section>
+
+        <section class="w-full">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14692.471710812997!2d-43.3641911!3d-22.9826906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1612707978931!5m2!1spt-BR!2sbr"
-            width="100%" height="350" frameborder="0" style="border: 0" allowfullscreen>
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14692.471710812997!2d-43.3641911!3d-22.9826906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1612707978931!5m2!1spt-BR!2sbr"
+                width="100%" height="350" frameborder="0" style="border: 0" allowfullscreen>
             </iframe>
         </section>
 
-        <section class="limitar-area secao-container" id="sobre">
-            <h2>SOBRE A POUSADA!</h2>
+        <section class="max-w-[1024px] text-center text-gray-600 pt-10 mb-10 leading-loose" id="sobre">
+            <h2 class="text-4xl mb-6">SOBRE A POUSADA!</h2>
             <p>Conheça um pouco sobre nossa pousada.</p>
         </section>
 
-        <section class="limitar-area descricoes">
-            <div class="descricao">
-                <div class="descricao-conteudo">
-                    <h3>A pousada</h3>
-                    <p>A pousada Dev dispõe de estacionamento privado gratuito, piscina ao ar livre e bar.</p>
+        <section class="max-w-[1024px] flex justify-between flex-wrap pb-10">
+            <div class="w-[45%] flex justify-between items-center p-6 mx-2">
+                <div class="grow shrink basis-auto">
+                    <h3 class="font-bold text-lg">A pousada</h3>
+                    <p class="text-gray-600 mt-2">A pousada Dev dispõe de estacionamento privado gratuito, piscina ao ar livre e bar.</p>
                 </div>
 
-                    <img class="img-descricao" src="assets/img1.jpg" alt="Faixada">
+                <img class="w-[100px] h-[110px] object-cover ml-2" src="assets/img1.jpg" alt="Faixada">
             </div>
 
-            <div class="descricao">
-                <div class="descricao-conteudo">
-                    <h3>Alimentação</h3>
-                    <p>A pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam 24hrs.</p>
+            <div class="w-[45%] flex justify-between items-center p-6 mx-2">
+                <div class="grow shrink basis-auto">
+                    <h3 class="font-bold text-lg">Alimentação</h3>
+                    <p class="text-gray-600 mt-2">A pousada serve café da manhã em estilo continental ou buffet. Nossos restaurantes funcionam
+                        24hrs.</p>
                 </div>
-                
-                <img class="img-descricao" src="assets/img3.jpg" alt="Quartos">
+
+                <img class="w-[100px] h-[110px] object-cover ml-2" src="assets/img3.jpg" alt="Quartos">
             </div>
 
-            <div class="descricao">
-                <div class="descricao-conteudo">
-                    <h3>Nossos Quartos</h3>
-                    <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e
-                    área para refeições. Além disso, as unidades da Pousada Dev contam
-                    com ar-condicionado e guarda-roupa.</p>
+            <div class="w-[45%] flex justify-between items-center p-6 mx-2">
+                <div class="grow shrink basis-auto">
+                    <h3 class="font-bold text-lg">Nossos Quartos</h3>
+                    <p class="text-gray-600 mt-2">Os quartos possuem TV de tela plana a cabo, cozinha compacta e
+                        área para refeições. Além disso, as unidades da Pousada Dev contam
+                        com ar-condicionado e guarda-roupa.</p>
                 </div>
 
-                <img class="img-descricao" src="assets/img2.jpg" alt="Restaurante">
+                <img class="w-[100px] h-[110px] object-cover ml-2" src="assets/img2.jpg" alt="Restaurante">
             </div>
 
-            <div class="descricao">
-                <div class="descricao-conteudo">
-                    <h3>Recepção</h3>
-                    <p>Nossa recepção fica aberta 24hrs.</p>
+            <div class="w-[45%] flex justify-between items-center p-6 mx-2">
+                <div class="grow shrink basis-auto">
+                    <h3 class="font-bold text-lg">Recepção</h3>
+                    <p class="text-gray-600 mt-2">Nossa recepção fica aberta 24hrs.</p>
                 </div>
 
-                <img class="img-descricao" src="assets/img5.jpg" alt="Recepção">
+                <img class="w-[100px] h-[110px] object-cover ml-2" src="assets/img5.jpg" alt="Recepção">
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="limitar-area container-rodape">
-            <div class="rodape-info">
-                <h4>Entre em contato conosco:</h4>
+    <footer class="bg-[#49997d] text-white flex flex-col justify-center items-center">
+        <div class="max-w-[1024px] h-32 flex flex-wrap justify-between">
+            <div class="w-1/4 flex items-center">
+                <h4 class="text-2xl font-bold">Entre em contato conosco:</h4>
             </div>
 
-            <a class="rodape-info rodape-link" href="https://goo.gl/maps/wPAS58QxiTopxK6w7" target="_blank">
-                <img class="rodape-icone" src="assets/icones/endereco.png" alt="icone endereco">
-                <p>Endereço Av. 123, 222 - Rio de Janeiro RJ</p>
+            <a class="w-1/4 flex items-center" href="https://goo.gl/maps/wPAS58QxiTopxK6w7" target="_blank">
+                <img class="w-10 h-10 mr-2" src="assets/icones/endereco.png" alt="icone endereco">
+                <p class="w-1/2">Endereço Av. 123, 222 - Rio de Janeiro RJ</p>
             </a>
 
-            <div class="rodape-info">
-                <img class="rodape-icone" src="assets/icones/telefone.png" alt="icone telefone">
-                <p>Cel: 5521000000000</p>
+            <div class="w-1/4 flex items-center">
+                <img class="w-10 h-10 mr-2" src="assets/icones/telefone.png" alt="icone telefone">
+                <p class="w-1/2">Cel: 5521000000000</p>
             </div>
 
 
-            <a class="rodape-info rodape-link" href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&" target="_blank">
-                <img class="rodape-icone" src="assets/icones/calendario.png" alt="icone calendario">
-                <p>Faça sua reserva pelo Booking.com</p>
+            <a class="w-1/4 flex items-center"
+                href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&"
+                target="_blank">
+                <img class="w-10 h-10 mr-2" src="assets/icones/calendario.png" alt="icone calendario">
+                <p class="w-1/2">Faça sua reserva pelo Booking.com</p>
             </a>
-
-            
         </div>
-        <div class="limitar-area rodape-copyright">
-                <span>© Copyright - PousadaDev</span>
-            </div>
+
+        <div class="max-w-[1024px] w-full text-center font-bold p-5 border-t border-[#3b7863]">
+            <span>© Copyright - PousadaDev</span>
+        </div>
     </footer>
 </body>
+
 </html>
