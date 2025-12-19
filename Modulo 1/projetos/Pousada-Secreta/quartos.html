@@ -1,127 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quartos - Pousada Secreta</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="estilo-quartos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
-</head>
-<body>
-    <header class="topo">
-        <div class="limitar-area container">
-            <a class="link-logo" href="index.html">Pousada <span>Secreta</span></a>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
 
-            <nav class="link-topo">
-                <a href="index.html#sobre">Sobre</a>
-                <a href="index.html#rota">Rota</a>
-                <a href="index.html#quartos">Quartos</a>
+</head>
+
+<body class="m-0 p-0 font-SourceSansPro box-border">
+    <header class="w-full h-[60px] bg-white fixed flex justify-around items-center border-b border-gray-300">
+        <div class="w-full max-w-[1024px] h-[30px] flex justify-between items-center">
+            <a class="text-2xl text-[#3d3d3d] no-underline" href="index.html">Pousada <span
+                    class="text-[#6592c9]">Secreta</span></a>
+
+            <nav class="h-full text-lg no-underline uppercase flex space-x-4">
+                <a class="no-underline text-[#3d3d3d] px-2 transition-all duration-50 hover:border-b-4 border-[#6592c9]"
+                    href="index.html#sobre">Sobre</a>
+                <a class="no-underline text-[#3d3d3d] px-2 transition-all duration-50 hover:border-b-4 border-[#6592c9]"
+                    href="index.html#rota">Rota</a>
+                <a class="no-underline text-[#3d3d3d] px-2 transition-all duration-50 hover:border-b-4 border-[#6592c9]"
+                    href="index.html#quartos">Quartos</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="banner titulo-galeria"></section>
+    <section class="h-[30vh] flex justify-center items-center bg-banner bg-no-repeat bg-cover"></section>
 
-        <section class="limitar-area secao-container" id="solteiro">
-            <h2>QUARTOS DE SOLTEIRO</h2>
+    <main class="w-full flex flex-col justify-center items-center">
+        <section class="max-w-[1024px] text-center text-gray-600 pt-10 mb-10 leading-loose" id="solteiro">
+            <h2 class="text-4xl mb-6">QUARTOS DE SOLTEIRO</h2>
             <p>Conheça os nossos quartos de solteiro.</p>
 
-            <div class="img-quartos">
-                <img src="assets/quarto-solteiro1.jpg" alt="Quarto de Solteiro 1" title="Quarto de solteiro 1">
-                <img src="assets/quarto-solteiro2.jpg" alt="Quarto de Solteiro 2" title="Quarto de solteiro 2">
-                <img src="assets/quarto-solteiro3.jpg" alt="Quarto de Solteiro 3" title="Quarto de solteiro 3">
+            <div class="py-3 flex justify-around">
+                <img class="w-[30%]" src="assets/quarto-solteiro1.jpg" alt="Quarto de Solteiro 1"
+                    title="Quarto de solteiro 1">
+                <img class="w-[30%]" src="assets/quarto-solteiro2.jpg" alt="Quarto de Solteiro 2"
+                    title="Quarto de solteiro 2">
+                <img class="w-[30%]" src="assets/quarto-solteiro3.jpg" alt="Quarto de Solteiro 3"
+                    title="Quarto de solteiro 3">
             </div>
 
-            <div>
-                <h3>Informações sobre o quarto:</h3>
-                <ul class="quarto-info">
-                    <li>TV de tela plana a cabo.</li>
-                    <li>Cozinha compacta.</li>
-                    <li>Área para refeições.</li>
-                    <li>Ar-condicionado.</li>
-                    <li>1 ou 2 camas de solteiro.</li>
-                    <li>Não permite cancelamento.</li>
+            <div class="flex flex-col justify-center items-center">
+                <h3 class="font-bold">Informações sobre o quarto:</h3>
+                <ul class="flex justify-between flex-wrap">
+                    <li class="w-1/4 mt-3 text-left">TV de tela plana a cabo.</li>
+                    <li class="w-1/4 mt-3 text-left">Cozinha compacta.</li>
+                    <li class="w-1/4 mt-3 text-left">Área para refeições.</li>
+                    <li class="w-1/4 mt-3 text-left">Ar-condicionado.</li>
+                    <li class="w-1/4 mt-3 text-left">1 ou 2 camas de solteiro.</li>
+                    <li class="w-1/4 mt-3 text-left">Não permite cancelamento.</li>
                 </ul>
             </div>
         </section>
 
-        <section class="limitar-area secao-container" id="casal">
-            <h2>QUARTOS DE CASAL</h2>
+        <section class="max-w-[1024px] text-center text-gray-600 pt-10 mb-10 leading-loose" id="casal">
+            <h2 class="text-4xl mb-6">QUARTOS DE CASAL</h2>
             <p>Conheça os nossos quartos de casal.</p>
 
-            <div class="img-quartos">
-                <img src="assets/quarto-casal1.jpg" alt="Quarto de Casal 1" title="Quarto de casal 1">
-                <img src="assets/quarto-casal2.jpg" alt="Quarto de Casal 2" title="Quarto de casal 2">
-                <img src="assets/quarto-casal3.jpg" alt="Quarto de Casal 3" title="Quarto de casal 3">
+            <div class="py-3 flex justify-around">
+                <img class="w-[30%]" src="assets/quarto-casal1.jpg" alt="Quarto de Casal 1" title="Quarto de casal 1">
+                <img class="w-[30%]" src="assets/quarto-casal2.jpg" alt="Quarto de Casal 2" title="Quarto de casal 2">
+                <img class="w-[30%]" src="assets/quarto-casal3.jpg" alt="Quarto de Casal 3" title="Quarto de casal 3">
             </div>
 
-            <div>
-                <h3>Informações sobre o quarto:</h3>
-                <ul class="quarto-info">
-                    <li>TV de tela plana a cabo.</li>
-                    <li>Cozinha compacta.</li>
-                    <li>Área para refeições.</li>
-                    <li>Ar-condicionado.</li>
-                    <li>1 cama de casal.</li>
-                    <li>Cancelamento grátis.</li>
+            <div class="flex flex-col justify-center items-center">
+                <h3 class="font-bold">Informações sobre o quarto:</h3>
+                <ul class="flex justify-between flex-wrap">
+                    <li class="w-1/4 mt-3 text-left">TV de tela plana a cabo.</li>
+                    <li class="w-1/4 mt-3 text-left">Cozinha compacta.</li>
+                    <li class="w-1/4 mt-3 text-left">Área para refeições.</li>
+                    <li class="w-1/4 mt-3 text-left">Ar-condicionado.</li>
+                    <li class="w-1/4 mt-3 text-left">1 cama de casal.</li>
+                    <li class="w-1/4 mt-3 text-left">Cancelamento grátis.</li>
                 </ul>
             </div>
         </section>
 
-        <section class="limitar-area secao-container" id="familia">
-            <h2>QUARTOS FAMÍLIA</h2>
+        <section class="max-w-[1024px] text-center text-gray-600 pt-10 mb-10 leading-loose" id="familia">
+            <h2 class="text-4xl mb-6">QUARTOS FAMÍLIA</h2>
             <p>Conheça os nossos quartos família.</p>
 
-            <div class="img-quartos">
-                <img src="assets/quarto-familia1.jpg" alt="Quarto de Família 1" title="Quarto de familia 1">
-                <img src="assets/quarto-familia2.jpg" alt="Quarto de Família 2" title="Quarto de familia 2">
-                <img src="assets/quarto-familia3.jpg" alt="Quarto de Família 3" title="Quarto de familia 3">
+            <div class="py-3 flex justify-around">
+                <img class="w-[30%]" src="assets/quarto-familia1.jpg" alt="Quarto de Família 1"
+                    title="Quarto de familia 1">
+                <img class="w-[30%]" src="assets/quarto-familia2.jpg" alt="Quarto de Família 2"
+                    title="Quarto de familia 2">
+                <img class="w-[30%]" src="assets/quarto-familia3.jpg" alt="Quarto de Família 3"
+                    title="Quarto de familia 3">
             </div>
 
-            <div>
-                <h3>Informações sobre o quarto:</h3>
-                <ul class="quarto-info">
-                    <li>TV de tela plana a cabo.</li>
-                    <li>Cozinha compacta.</li>
-                    <li>Área para refeições.</li>
-                    <li>Ar-condicionado.</li>
-                    <li>1 cama de casal e 1 de solteiro.</li>
-                    <li>Cancelamento grátis.</li>
+            <div class="flex flex-col justify-center items-center">
+                <h3 class="font-bold">Informações sobre o quarto:</h3>
+                <ul class="flex justify-between flex-wrap">
+                    <li class="w-1/4 mt-3 text-left">TV de tela plana a cabo.</li>
+                    <li class="w-1/4 mt-3 text-left">Cozinha compacta.</li>
+                    <li class="w-1/4 mt-3 text-left">Área para refeições.</li>
+                    <li class="w-1/4 mt-3 text-left">Ar-condicionado.</li>
+                    <li class="w-1/4 mt-3 text-left">1 cama de casal e 1 de solteiro.</li>
+                    <li class="w-1/4 mt-3 text-left">Cancelamento grátis.</li>
                 </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="limitar-area container-rodape">
-            <div class="rodape-info">
-                <h4>Entre em contato conosco:</h4>
+    <footer class="bg-[#49997d] text-white flex flex-col justify-center items-center">
+        <div class="max-w-[1024px] h-32 flex flex-wrap justify-between">
+            <div class="w-1/4 flex items-center">
+                <h4 class="text-2xl font-bold">Entre em contato conosco:</h4>
             </div>
 
-            <a class="rodape-info rodape-link" href="https://goo.gl/maps/wPAS58QxiTopxK6w7" target="_blank">
-                <img class="rodape-icone" src="assets/icones/endereco.png" alt="icone endereco">
-                <p>Endereço Av. 123, 222 - Rio de Janeiro RJ</p>
+            <a class="w-1/4 flex items-center" href="https://goo.gl/maps/wPAS58QxiTopxK6w7" target="_blank">
+                <img class="w-10 h-10 mr-2" src="assets/icones/endereco.png" alt="icone endereco">
+                <p class="w-1/2">Endereço Av. 123, 222 - Rio de Janeiro RJ</p>
             </a>
 
-            <div class="rodape-info">
-                <img class="rodape-icone" src="assets/icones/telefone.png" alt="icone telefone">
-                <p>Cel: 5521000000000</p>
+            <div class="w-1/4 flex items-center">
+                <img class="w-10 h-10 mr-2" src="assets/icones/telefone.png" alt="icone telefone">
+                <p class="w-1/2">Cel: 5521000000000</p>
             </div>
 
 
-            <a class="rodape-info rodape-link" href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&" target="_blank">
-                <img class="rodape-icone" src="assets/icones/calendario.png" alt="icone calendario">
-                <p>Faça sua reserva pelo Booking.com</p>
+            <a class="w-1/4 flex items-center"
+                href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&"
+                target="_blank">
+                <img class="w-10 h-10 mr-2" src="assets/icones/calendario.png" alt="icone calendario">
+                <p class="w-1/2">Faça sua reserva pelo Booking.com</p>
             </a>
-
-            
         </div>
-        <div class="limitar-area rodape-copyright">
-                <span>© Copyright - PousadaDev</span>
-            </div>
+
+        <div class="max-w-[1024px] w-full text-center font-bold p-5 border-t border-[#3b7863]">
+            <span>© Copyright - PousadaDev</span>
+        </div>
     </footer>
 </body>
+
 </html>
