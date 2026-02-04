@@ -1,8 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
+
+@layer components {
+  .card-sabores {
+    @apply flex flex-col items-center gap-[10px] grow shrink basis-[300px] text-center p-[20px] shadow-[2px_2px_15px_2px_#d9dde1];
+  }
+
+  .card-sabores .img-sabor {
+    @apply w-[250px] h-[230px];
+  }
+
+  .card-sabores h3 {
+    @apply text-[18px];
+  }
+
+  .card-sabores p {
+    @apply text-base;
+  }
+
+  .link-header {
+    @apply text-[18px] font-semibold no-underline;
+  }
 }
