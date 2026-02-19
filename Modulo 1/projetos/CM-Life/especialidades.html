@@ -1,236 +1,243 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMLife - Especialidades</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo-especialidades.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
 </head>
-<body>
-    <header class="topo">
-        <div class="container">
-            <div class="topo-titulo">
-                <a href="index.html"><img class="topo-logo" src="assets/logo.png" alt="Imagem do Logo"></a>
+
+<body class="font-['Source Sans Pro']">
+    <header class="w-full bg-[#00cad1]">
+        <div class="max-w-[1024px] w-full min-h-[60px] flex flex-col md:flex-row justify-between items-center my-0 mx-auto px-[10px]">
+            <div>
+                <a href="index.html"><img class="h-[60px]" src="assets/logo.png" alt="Imagem do Logo"></a>
             </div>
 
-            <nav class="topo-links">
-                <a href="index.html#sobre">Sobre</a>
-                <a href="especialidades.html">Especialidades</a>
-                <a href="index.html#contato">Contato</a>
+            <nav class="w-full md:w-auto flex justify-around border-t border-[#009fa5] md:border-none ">
+                <a href="index.html#sobre"
+                    class="text-xs md:text-base p-[10px] font-bold text-white hover:text-[#004b4c]">Sobre</a>
+                <a href="especialidades.html"
+                    class="text-xs md:text-base p-[10px] font-bold text-white hover:text-[#004b4c]">Especialidades</a>
+                <a href="index.html#contato"
+                    class="text-xs md:text-base p-[10px] font-bold text-white hover:text-[#004b4c]">Contato</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="conteiner-links-especialidades">
-            <div class="container links-especialidades">
-                <a href="#ortopedia">Ortopedia</a>
-                <a href="#pediatria">Pediatria</a>
-                <a href="#geriatria">Geriatria</a>
-                <a href="#psicologia">Psicologia</a>
-                <a href="#fisioterapia">Fisioterapia</a>
+        <section class="text-center px-[20px]">
+            <div class="flex justify-center flex-wrap mt-[20px]">
+                <a class="text-lg border-b-2 border-[#00cad1] mb-[10px] mx-[10px] hover:text-[#0d6e71]" href="#ortopedia">Ortopedia</a>
+                <a class="text-lg border-b-2 border-[#00cad1] mb-[10px] mx-[10px] hover:text-[#0d6e71]" href="#pediatria">Pediatria</a>
+                <a class="text-lg border-b-2 border-[#00cad1] mb-[10px] mx-[10px] hover:text-[#0d6e71]" href="#geriatria">Geriatria</a>
+                <a class="text-lg border-b-2 border-[#00cad1] mb-[10px] mx-[10px] hover:text-[#0d6e71]" href="#psicologia">Psicologia</a>
+                <a class="text-lg border-b-2 border-[#00cad1] mb-[10px] mx-[10px] hover:text-[#0d6e71]" href="#fisioterapia">Fisioterapia</a>
             </div>
 
-            <h1>Conheça as nossas especialidades</h1>
+            <h1 class="text-[2em] text-[#0000008c] font-bold my-[20px]">Conheça as nossas especialidades</h1>
         </section>
 
-        <section id="ortopedia" class="container secao-especialidade">
-            <div class="container-titulo">
-                <h3>Ortopedia</h3>
-                <p>A ortopedia é a especialidade médica que cuida da saúde relacionadas
-                aos elementos do aparelho locomotor, como ossos, músculos, ligamentos e
-                articulações.</p>
+        <section id="ortopedia" class="max-w-[1024px] mx-auto mt-[40px]">
+            <div class="text-center mx-[20px]">
+                <h3 class="text-[1.2em] text-[#0000008c] font-bold my-[20px]">Ortopedia</h3>
+                <p class="text-[#0000008c] my-[16px]">A ortopedia é a especialidade médica que cuida da saúde relacionadas
+                    aos elementos do aparelho locomotor, como ossos, músculos, ligamentos e
+                    articulações.</p>
             </div>
 
-            <div class="box-tabela-especialista">
-                <img src="assets/ortopedia.png" alt="Ortopedia">
-                <table class="tabela-especialistas">
-                    <thead>
+            <div class="flex h-auto md:h-[240px] justify-center px-[10px] sm:px-[20px]">
+                <img class="hidden md:block w-[30%] h-full object-cover" src="assets/ortopedia.png" alt="Ortopedia">
+                <table class="w-full md:w-[70%] h-full border-separate border-spacing-0">
+                    <thead class="bg-[#00cad1] text-white">
                         <tr>
-                            <th>Dias</th>
-                            <th>Horários</th>
-                            <th>Médico(a)</th>
+                            <th class="p-[10px]">Dias</th>
+                            <th class="p-[10px]">Horários</th>
+                            <th class="p-[10px]">Médico(a)</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Segunda e quartas</td>
-                            <td>8:00 às 13:00</td>
-                            <td>Dra. Daniele Almeida</td>
+                    <tbody class="text-[#585757] font-medium">
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Segunda e quartas</td>
+                            <td class="p-[10px]">8:00 às 13:00</td>
+                            <td class="p-[10px]">Dra. Daniele Almeida</td>
                         </tr>
-                        <tr>
-                            <td>Terça, Quinta e Sexta</td>
-                            <td>14:00 às 21:00</td>
-                            <td>Dr. Daniel Souza</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Terça, Quinta e Sexta</td>
+                            <td class="p-[10px]">14:00 às 21:00</td>
+                            <td class="p-[10px]">Dr. Daniel Souza</td>
                         </tr>
-                        <tr>
-                            <td>Sábado</td>
-                            <td>8:00 às 21:00</td>
-                            <td>Dr. Manoel Bento</td>
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Sábado</td>
+                            <td class="p-[10px]">8:00 às 21:00</td>
+                            <td class="p-[10px]">Dr. Manoel Bento</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section id="pediatria" class="container secao-especialidade">
-            <div class="container-titulo">
-                <h3>Pediatria</h3>
-                <p>A pediatria é a especialidade médica dedicada à assistência à 
-                criança e ao adolescente, nos seus diversos aspectos, sejam eles 
-                preventivos ou curativos.</p>
+        <section id="pediatria" class="max-w-[1024px] mx-auto mt-[40px]">
+            <div class="text-center mx-[20px]">
+                <h3 class="text-[1.2em] text-[#0000008c] font-bold my-[20px]">Pediatria</h3>
+                <p class="text-[#0000008c] my-[16px]">A pediatria é a especialidade médica dedicada à assistência à
+                    criança e ao adolescente, nos seus diversos aspectos, sejam eles
+                    preventivos ou curativos.</p>
             </div>
 
-            <div class="box-tabela-especialista">
-                <img src="assets/pediatra2.png" alt="Pediatria">
-                <table class="tabela-especialistas">
-                    <thead>
-                        <th>Dias</th>
-                        <th>Horários</th>
-                        <th>Médico(a)</th>
+            <div class="flex h-auto md:h-[240px] justify-center px-[10px] sm:px-[20px]">
+                <img class="hidden md:block w-[30%] h-full object-cover" src="assets/pediatra2.png" alt="Pediatria">
+                <table class="w-full md:w-[70%] h-full border-separate border-spacing-0">
+                    <thead class="bg-[#00cad1] text-white">
+                        <th  class="p-[10px]">Dias</th>
+                        <th  class="p-[10px]">Horários</th>
+                        <th  class="p-[10px]">Médico(a)</th>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Segunda e quartas</td>
-                            <td>8:00 às 15:00</td>
-                            <td>Dra. Elaine pinheiro</td>
+                    <tbody class="text-[#585757] font-medium">
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Segunda e quartas</td>
+                            <td class="p-[10px]">8:00 às 15:00</td>
+                            <td class="p-[10px]">Dra. Elaine pinheiro</td>
                         </tr>
-                        <tr>
-                            <td>Terça, Quinta e Sexta</td>
-                            <td>13:00 às 21:00</td>
-                            <td>Dr. Anderson Ramos</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Terça, Quinta e Sexta</td>
+                            <td class="p-[10px]">13:00 às 21:00</td>
+                            <td class="p-[10px]">Dr. Anderson Ramos</td>
                         </tr>
-                        <tr>
-                            <td>Sábado</td>
-                            <td>8:00 às 12:00</td>
-                            <td>Dra. Manoela Foster</td>
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Sábado</td>
+                            <td class="p-[10px]">8:00 às 12:00</td>
+                            <td class="p-[10px]">Dra. Manoela Foster</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section id="geriatria" class="container secao-especialidade">
-            <div class="container-titulo">
-                <h3>Geriatria</h3>
-                <p>Medicina geriátrica ou geriatria é o ramo da medicina que foca o estudo, 
-                a prevenção e o tratamento de doenças e da incapacidade em idades avançadas.</p>
+        <section id="geriatria" class="max-w-[1024px] mx-auto mt-[40px]">
+            <div class="text-center mx-[20px]">
+                <h3 class="text-[1.2em] text-[#0000008c] font-bold my-[20px]">Geriatria</h3>
+                <p class="text-[#0000008c] my-[16px]">Medicina geriátrica ou geriatria é o ramo da medicina que foca o estudo,
+                    a prevenção e o tratamento de doenças e da incapacidade em idades avançadas.</p>
             </div>
 
-            <div class="box-tabela-especialista">
-                <img src="assets/geriatra.png" alt="Geriatria">
-                <table class="tabela-especialistas">
-                    <thead>
-                        <th>Dias</th>
-                        <th>Horários</th>
-                        <th>Médico(a)</th>
+            <div class="flex h-auto md:h-[240px] justify-center px-[10px] sm:px-[20px]">
+                <img class="hidden md:block w-[30%] h-full object-cover" src="assets/geriatra.png" alt="Geriatria">
+                <table class="w-full md:w-[70%] h-full border-separate border-spacing-0">
+                    <thead class="bg-[#00cad1] text-white">
+                        <th class="p-[10px]">Dias</th>
+                        <th class="p-[10px]">Horários</th>
+                        <th class="p-[10px]">Médico(a)</th>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Segunda e quinta</td>
-                            <td>9:00 às 12:00</td>
-                            <td>Dr. Antônio Freitas</td>
+                    <tbody class="text-[#585757] font-medium">
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Segunda e quinta</td>
+                            <td class="p-[10px]">9:00 às 12:00</td>
+                            <td class="p-[10px]">Dr. Antônio Freitas</td>
                         </tr>
-                        <tr>
-                            <td>Terça e Quarta</td>
-                            <td>9:00 às 16:00</td>
-                            <td>Dr. Alfred Conceição</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Terça e Quarta</td>
+                            <td class="p-[10px]">9:00 às 16:00</td>
+                            <td class="p-[10px]">Dr. Alfred Conceição</td>
                         </tr>
-                        <tr>
-                            <td>Sexta</td>
-                            <td>8:00 às 19:00</td>
-                            <td>Dr. Almir Aguiar</td>
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Sexta</td>
+                            <td class="p-[10px]">8:00 às 19:00</td>
+                            <td class="p-[10px]">Dr. Almir Aguiar</td>
                         </tr>
-                        <tr>
-                            <td>Sábado</td>
-                            <td>08:00 às 14:00</td>
-                            <td>Dra. Andrea Almeida</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Sábado</td>
+                            <td class="p-[10px]">08:00 às 14:00</td>
+                            <td class="p-[10px]">Dra. Andrea Almeida</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section id="psicologia" class="container secao-especialidade">
-            <div class="container-titulo">
-                <h3>Psicologia</h3>
-                <p>Psicologia é a especialidade médica que trata da mente, do estudo e 
-                análise de seus processos e comportamento de indivíduos e grupos humanos 
-                em diferentes situações.</p>
+        <section id="psicologia" class="max-w-[1024px] mx-auto mt-[40px]">
+            <div class="text-center mx-[20px]">
+                <h3 class="text-[1.2em] text-[#0000008c] font-bold my-[20px]">Psicologia</h3>
+                <p class="text-[#0000008c] my-[16px]">Psicologia é a especialidade médica que trata da mente, do estudo e
+                    análise de seus processos e comportamento de indivíduos e grupos humanos
+                    em diferentes situações.</p>
             </div>
 
-            <div class="box-tabela-especialista">
-                <img src="assets/psicologo.png" alt="Psicologia">
-                <table class="tabela-especialistas">
-                    <thead>
-                        <th>Dias</th>
-                        <th>Horários</th>
-                        <th>Médico(a)</th>
+            <div class="flex h-auto md:h-[240px] justify-center px-[10px] sm:px-[20px]">
+                <img class="hidden md:block w-[30%] h-full object-cover" src="assets/psicologo.png" alt="Psicologia">
+                <table class="w-full md:w-[70%] h-full border-separate border-spacing-0">
+                    <thead class="bg-[#00cad1] text-white">
+                        <th class="p-[10px]">Dias</th>
+                        <th class="p-[10px]">Horários</th>
+                        <th class="p-[10px]">Médico(a)</th>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Segunda, terça e quarta</td>
-                            <td>8:00 às 21:00</td>
-                            <td>Dra. Diane Faguntes</td>
+                    <tbody class="text-[#585757] font-medium">
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Segunda, terça e quarta</td>
+                            <td class="p-[10px]">8:00 às 21:00</td>
+                            <td class="p-[10px]">Dra. Diane Faguntes</td>
                         </tr>
-                        <tr>
-                            <td>Quinta e Sexta</td>
-                            <td>14:00 às 18:00</td>
-                            <td>Dr. Daniel Dias</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Quinta e Sexta</td>
+                            <td class="p-[10px]">14:00 às 18:00</td>
+                            <td class="p-[10px]">Dr. Daniel Dias</td>
                         </tr>
-                        <tr>
-                            <td>Sábado</td>
-                            <td>10:00 às 15:00</td>
-                            <td>Dra. Beatriz Luz</td>
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Sábado</td>
+                            <td class="p-[10px]">10:00 às 15:00</td>
+                            <td class="p-[10px]">Dra. Beatriz Luz</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section id="fisioterapia" class="container secao-especialidade">
-            <div class="container-titulo">
-                <h3>Fisioterapia</h3>
-                <p>Fisioterapia é uma ciência da saúde aplicada ao estudo, diagnóstico, 
-                prevenção e tratamento de disfunções cinéticas funcionais de órgãos e 
-                sistemas.</p>
+        <section id="fisioterapia" class="max-w-[1024px] mx-auto mt-[40px]">
+            <div class="text-center mx-[20px]">
+                <h3 class="text-[1.2em] text-[#0000008c] font-bold my-[20px]">Fisioterapia</h3>
+                <p class="text-[#0000008c] my-[16px]">Fisioterapia é uma ciência da saúde aplicada ao estudo, diagnóstico,
+                    prevenção e tratamento de disfunções cinéticas funcionais de órgãos e
+                    sistemas.</p>
             </div>
 
-            <div class="box-tabela-especialista">
-                <img src="assets/fisioterapia.png" alt="Fisioterapia">
-                <table class="tabela-especialistas">
-                    <thead>
-                        <th>Dias</th>
-                        <th>Horários</th>
-                        <th>Médico(a)</th>
+            <div class="flex h-auto md:h-[300px] justify-center px-[10px] sm:px-[20px] mb-[20px]">
+                <img class="hidden md:block w-[30%] h-full object-cover" src="assets/fisioterapia.png" alt="Fisioterapia">
+                <table class="w-full md:w-[70%] h-full border-separate border-spacing-0">
+                    <thead class="bg-[#00cad1] text-white">
+                        <th class="p-[10px]">Dias</th>
+                        <th class="p-[10px]">Horários</th>
+                        <th class="p-[10px]">Médico(a)</th>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Segunda e quinta</td>
-                            <td>11:00 às 20:00</td>
-                            <td>Dr. Alberto de Paula</td>
+                    <tbody class="text-[#585757] font-medium">
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Segunda e quinta</td>
+                            <td class="p-[10px]">11:00 às 20:00</td>
+                            <td class="p-[10px]">Dr. Alberto de Paula</td>
                         </tr>
-                        <tr>
-                            <td>Segunda e quartas</td>
-                            <td>08:00 às 15:00</td>
-                            <td>Dra. Maria Fernades</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Segunda e quartas</td>
+                            <td class="p-[10px]">08:00 às 15:00</td>
+                            <td class="p-[10px]">Dra. Maria Fernades</td>
                         </tr>
-                        <tr>
-                            <td>Terça e sexta</td>
-                            <td>14:00 às 21:00</td>
-                            <td>Dra. Elaine Peixoto</td>
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Terça e sexta</td>
+                            <td class="p-[10px]">14:00 às 21:00</td>
+                            <td class="p-[10px]">Dra. Elaine Peixoto</td>
                         </tr>
-                        <tr>
-                            <td>Terça e quinta</td>
-                            <td>08:00 às 14:00</td>
-                            <td>Dra. Elaine Peixoto</td>
+                        <tr class="bg-[#f1f1f1]">
+                            <td class="p-[10px]">Terça e quinta</td>
+                            <td class="p-[10px]">08:00 às 14:00</td>
+                            <td class="p-[10px]">Dra. Elaine Peixoto</td>
                         </tr>
-                        <tr>
-                            <td>Quarta e Sábado</td>
-                            <td>8:00 às 21:00</td>
-                            <td>Dra. Bianca Rocha</td>
+                        <tr class="bg-[#cdcdcd]">
+                            <td class="p-[10px]">Quarta e Sábado</td>
+                            <td class="p-[10px]">8:00 às 21:00</td>
+                            <td class="p-[10px]">Dra. Bianca Rocha</td>
                         </tr>
                     </tbody>
                 </table>
@@ -238,13 +245,14 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <img class="topo-logo" src="assets/logo.png" alt="Logo">
+    <footer class="bg-[#0d6e71] p-[20px]">
+        <div class="max-w-[1024px] my-0 mx-auto text-white text-center">
+            <img class="h-[60px]" src="assets/logo.png" alt="Logo">
             <p>Telefone e WhatsApp: (21) 99966-5555</p>
             <p>Endereço: Av. Ayrton Senna, 3000 - Barra da Tijuca, Rio de Janeiro</p>
             <p>©2020 Clínica Médica Life - Todos os direitos reservados</p>
         </div>
     </footer>
 </body>
+
 </html>
