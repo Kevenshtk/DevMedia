@@ -81,7 +81,7 @@
     - ### imagem do projeto:
     ![Imagem](https://kevenshtk.github.io/DevMedia/Modulo%201/projetos/CM-Life/assets/telaCM-Life.png)
     - ### tecnologias usadas: 
-        <img align="center" src="https://skillicons.dev/icons?i=html,css" alt="icons"/>
+        <img align="center" src="https://skillicons.dev/icons?i=html,tailwind" alt="icons"/>
     - ### link do repositório: [CM - Life](https://github.com/Kevenshtk/DevMedia/tree/main/Modulo%201/projetos/CM-Life)
     - ### deploy: [CM - Life](https://kevenshtk.github.io/DevMedia/Modulo%201/projetos/CM-Life/index.html)
 
